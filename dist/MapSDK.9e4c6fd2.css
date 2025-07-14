@@ -1,0 +1,30 @@
+html, body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  will-change: transform;
+  outline: none;
+  width: 100vw;
+  min-width: 320px;
+  height: 100vh;
+  min-height: 320px;
+  display: block;
+}
+
+main {
+  justify-content: stretch;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+/*# sourceMappingURL=MapSDK.9e4c6fd2.css.map */
