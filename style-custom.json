@@ -1,0 +1,139 @@
+{
+    "version": 8,
+    "name": "Dark Matter",
+    "metadata": {
+      "maputnik:renderer": "mbgljs"
+    },
+    "sources": {
+      "natureMvt": {
+        "type": "vector",
+        "tiles": [
+          "https://aips.siniswift.com/gis/spaces/features/NATURE/{z}_{x}_{y}.mvt"
+        ],
+        "minzoom": 0,
+        "maxzoom": 24
+      },
+      "baseMvt": {
+        "type": "vector",
+        "tiles": [
+          "https://aips.siniswift.com/gis/spaces/features/BASE/{z}_{x}_{y}.mvt"
+        ],
+        "minzoom": 0,
+        "maxzoom": 24
+      }
+    },
+    "sprite": "https://tiles.basemaps.cartocdn.com/gl/dark-matter-gl-style/sprite",
+    "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+      {
+        "id": "oceanLayer",
+        "type": "fill",
+        "source": "natureMvt",
+        "source-layer": "ocean",
+        "paint": {
+          "fill-color": "#d1f1fe",
+          "fill-opacity": 1
+        }
+      },
+    
+      {
+        "id": "worldLayer",
+        "type": "fill",
+        "source": "natureMvt",
+        "source-layer": "world_sample",
+        "paint": {
+          "fill-color": "#ffffff",
+          "fill-opacity": 1
+        }
+      },
+      {
+        "id": "line-label-layer",
+        "type": "symbol",
+        "source": "baseMvt",
+        "source-layer": "ad_hp_202507",
+        "layout": {
+          "icon-image": "triangle-icon",
+          "icon-size": 0.5,
+          "symbol-z-order": "viewport-y",
+          "text-field": ["get","codeId"],
+          "text-font": ["Open Sans Italic"],
+          "text-size": 12,
+          "text-offset": [0, 1]
+        },
+        "paint": {
+          "text-color": "#162626"
+        }
+      },
+      {
+        "id": "airspaceLayer",
+        "type": "line",
+        "source": "baseMvt",
+        "source-layer": "airspace_line_202507",
+        "paint": {
+          "line-color": "#434340",
+          "line-opacity": 0.8,
+          "line-width": 2
+        }
+      },
+      {
+        "id": "segmentLayer",
+        "type": "line",
+        "source": "baseMvt",
+        "source-layer": "segment_202507",
+        "paint": {
+          "line-color": "#162626",
+          "line-opacity": 0.8,
+          "line-width": 1
+        }
+      },
+      {
+        "id": "controlledLayer",
+        "type": "line",
+        "source": "baseMvt",
+        "source-layer": "controlled_line_202507",
+        "paint": {
+          "line-color": "#0A8A24",
+          "line-opacity": 0.8,
+          "line-width": 1
+        }
+      },
+      {
+        "id": "restrictedLayer",
+        "type": "line",
+        "source": "baseMvt",
+        "source-layer": "restricted_line_202507",
+        "paint": {
+          "line-color": "#F6A708",
+          "line-opacity": 0.8,
+          "line-width": 1
+        }
+      },
+      {
+        "id": "vorLayer",
+        "type": "circle",
+        "source": "baseMvt",
+        "source-layer": "vor_202507",
+        "paint": {
+          "circle-color": "#CD97F0",
+          "circle-opacity": 0.8,
+          "circle-radius": 4
+        }
+      },
+      {
+        "id": "ndbLayer",
+        "type": "circle",
+        "source": "baseMvt",
+        "source-layer": "ndb_202507",
+        "paint": {
+          "circle-color": "#CD97F0",
+          "circle-opacity": 0.8,
+          "circle-radius": 4
+        }
+      }
+    ],
+    "id": "voyager",
+    "owner": "baseMvt",
+    "projection": {
+    }
+  }
+  
