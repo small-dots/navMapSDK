@@ -65,7 +65,7 @@ function addMVT(map) {
         "source-layer": "segment_202507", // 线图层名
         layout: {
           "symbol-placement": "line", // ✅ 关键属性，表示文字沿线分布
-          "text-field": ["get", "segmentId"], // 或固定文本，比如 "路线A"
+          "text-field": ["get", "txtDesig"], // 或固定文本，比如 "路线A"
           "text-font": ["Open Sans Bold"],
           "text-size": 14,
           "text-rotation-alignment": "map", // 文字跟随线条旋转
@@ -90,3 +90,7 @@ function addMVT(map) {
   //     });
   //   }
 }
+
+
+// controlledLayer 管制区  绿色
+// restrictedLayer 限制区 黄色
