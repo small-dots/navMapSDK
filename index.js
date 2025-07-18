@@ -32,31 +32,9 @@ function addMVT(map) {
     .then(async (res) => {
       console.log(res);
       let image = await map.loadImage("/triangle-fill.png");
+      let airport = await map.loadImage("/airport.png");
       map.addImage("triangle-icon", image.data);
-      // 空域
-      // map.addLayer({
-      //   id: 'aisapacelayer',
-      //   "source-layer": 'airspace_line_202507',
-      //   source:'baseMvt',
-      //   type: "line",
-      //   "paint": {
-      //     "line-color": "#a6b4f5",
-      //     "line-opacity": 1,
-      //     "line-width": 2
-      //   }
-      // });
-      // 机场图标
-      // map.addLayer({
-      //   id: "airportLayer1",
-      //   type: "circle",
-      //   source: "baseMvt",
-      //   "source-layer": "ad_hp_202507",
-      //   paint: {
-      //     "circle-color": "#ff0000",
-      //     "circle-opacity": 1,
-      //     "circle-radius": 6,
-      //   },
-      // });
+      map.addImage("airport-icon", airport.data);
 
       map.addLayer({
         id: "line-label",
@@ -64,7 +42,7 @@ function addMVT(map) {
         source: "baseMvt", // 对应的 vector source
         "source-layer": "segment_202507", // 线图层名
         layout: {
-          "symbol-placement": "line", // ✅ 关键属性，表示文字沿线分布
+          "symbol-placement": "line", // 关键属性，表示文字沿线分布
           "text-field": ["get", "txtDesig"], // 或固定文本，比如 "路线A"
           "text-font": ["Open Sans Bold"],
           "text-size": 14,
@@ -77,18 +55,31 @@ function addMVT(map) {
           "text-halo-width": 2,
         },
       });
-
-      console.log("laerys", map.getSource("baseMvt"));
+      // administrative 图层 行政区域
+      map.addLayer({
+        "id": "administrativeLayer",
+        "type": "fill",
+        "source": "maplibreCountries",
+        "source-layer": "administrative",
+        "paint": {
+          "fill-color": "#ff0000",
+          "fill-opacity": 1
+        }
+      }, 'oceanLayer')
+      // 邮政区划 postal 邮局 
+      map.addLayer({
+        "id": "postalLayer",
+        "type": "fill",
+        "source": "maplibreCountries",
+        "source-layer": "postal",
+        "minzoom": 6,
+        "maxzoom": 11,
+        "paint": {
+          "fill-color": "#0000ff",
+          "fill-opacity": 1
+        }
+      }, 'oceanLayer')
     });
-
-  //   if (!map.getSource(MVT_SOURCE_ID)) {
-  //     map.addSource(MVT_SOURCE_ID, {
-  //       type: "vector",
-  //       tiles: MVT_TILES,
-  //       minzoom: MVT_MINZOOM,
-  //       maxzoom: MVT_MAXZOOM,
-  //     });
-  //   }
 }
 
 
