@@ -13,6 +13,14 @@
       "minzoom": 0,
       "maxzoom": 24
     },
+    "AMMMvt": {
+      "type": "vector",
+      "tiles": [
+        "https://aips.siniswift.com/gis/spaces/features/AMM/{z}_{x}_{y}.mvt"
+      ],
+      "minzoom": 9,
+      "maxzoom": 24
+    },
     "baseMvt": {
       "type": "vector",
       "tiles": [
@@ -24,7 +32,7 @@
     "maplibreCountries": {
       "type": "vector",
       "tiles": [
-        "https://api.maptiler.com/tiles/countries/{z}/{x}/{y}.pbf?key=0fZ6KQdoBr7MjJofYHkh"
+        "https://api.maptiler.com/tiles/land/{z}/{x}/{y}.pbf?key=0fZ6KQdoBr7MjJofYHkh"
       ],
       "minzoom": 0,
       "maxzoom": 24
@@ -44,7 +52,7 @@
       }
     },
     {
-      "id": "line-label-layer",
+      "id": "airport-label-layer",
       "type": "symbol",
       "source": "baseMvt",
       "source-layer": "ad_hp_202507",
@@ -138,5 +146,6 @@
   ],
   "id": "voyager",
   "owner": "baseMvt",
-  "projection": {}
+  "projection": {
+  }
 }
