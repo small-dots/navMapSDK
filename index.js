@@ -40,10 +40,10 @@ function addMVT(map) {
       console.log(res);
       let image = await map.loadImage("/triangle-fill.png");
       let airport = await map.loadImage("/airport.png");
-      const border = await map.loadImage("/border.png")
+      const border = await map.loadImage("/border.png");
       map.addImage("triangle-icon", image.data);
       map.addImage("airport-icon", airport.data);
-      map.addImage('border',border.data)
+      map.addImage("border", border.data);
       // 航线名称
       // map.addLayer({
       //   id: "line-label",
@@ -84,45 +84,59 @@ function addMVT(map) {
         layout: {
           "symbol-placement": "line", // 关键属性，表示文字沿线分布
           "text-size": 14,
-          "icon-image": 'border',
-          "symbol-spacing": [
-            "interpolate",
-            ["linear"],
-            ["zoom"],
-            11,
-            400,
-            14,
-            600,
-            16,
-            800,
-            22,
-            1200,
-          ],
+          // "icon-image": 'border',
+          // "symbol-spacing": [
+          //   "interpolate",
+          //   ["linear"],
+          //   ["zoom"],
+          //   11,
+          //   400,
+          //   14,
+          //   600,
+          //   16,
+          //   800,
+          //   22,
+          //   1200,
+          // ],
           // "symbol-placement": ["step", ["zoom"], "point", 11, "line"],
-          "text-rotation-alignment": "viewport",
-          "icon-text-fit":"both",
-          "icon-text-fit-padding":[2,5,2,5],
-          
+          // "text-rotation-alignment": "viewport",
+          "icon-text-fit": "both",
+          "icon-text-fit-padding": [2, 5, 2, 5],
+
           "text-field": [
-                  "format",
-                  ["get", "valLen"],
-                  { "font-scale": 0.8 ,'text-color':'#536577','text-border-width':'3'},
-                  ["get", "uomDist"],
-                  { "font-scale": 0.8 ,'text-color':'#536577'},
-                  "\n",
-                  ["get", "txtDesig"],
-                  { "font-scale": 1 },
-                  "\n",
-                  ["get", "txtDesigHigh"],
-                  { "font-scale": 0.8 ,'text-color':'#536577'},
-                ], // 或固定文本，比如 "路线A"
+            "format",
+            ["get", "valLen"],
+            {
+              "font-scale": 0.8,
+              "text-color": "#536577",
+              "text-border-width": "3",
+              "text-halo-width": 0,
+            },
+            ["get", "uomDist"],
+            {
+              "font-scale": 0.8,
+              "text-color": "#536577",
+              "text-halo-width": 0,
+            },
+            "\n",
+            ["get", "txtDesig"],
+            {
+              "font-scale": 1,
+              "text-halo-width": 1,
+              "text-halo-blur": 0.7,
+              "text-halo-color": "#ffffff",
+            },
+            "\n",
+            ["get", "txtDesigHigh"],
+            {
+              "font-scale": 0.8,
+              "text-color": "#536577",
+              "text-halo-width": 0,
+            },
+          ], // 或固定文本，比如 "路线A"
           "text-letter-spacing": 0.05,
         },
-        paint: {
-          "text-halo-width": 1,
-          "text-halo-blur": 0.7,
-          "text-halo-color": "#ffffff",
-        },
+        paint: {},
       });
       // 航路点
       map.addLayer({
