@@ -1,6 +1,6 @@
 const MAP_CONTAINER_ID = "map";
 const MAP_CENTER = [-122.447303, 37.753574];
-const MAP_ZOOM = 2;
+const MAP_ZOOM = 0;
 const MVT_SOURCE_ID = "contours8989";
 const TILE_KEY = "get_your_own_OpIi9ZULNHzrESv6T2vL";
 const MVT_TILES = [
@@ -11,8 +11,9 @@ const MVT_MINZOOM = 0;
 const MVT_MAXZOOM = 15;
 
 window.addEventListener("DOMContentLoaded", () => {
-  initMap().then((map) => {
+  +initMap().then((map) => {
     addMVT(map);
+    setupDeckLayer(map);
     setupLayerControlPanel(map);
   });
 });
@@ -26,11 +27,167 @@ function initMap() {
         zoom: MAP_ZOOM,
         style: "./style-custom.json",
       });
-      map.on("load", () => resolve(map));
+      map.on("style.load", () => resolve(map));
     } catch (e) {
       reject(e);
     }
   });
+}
+
+// 叠加deck图层
+function setupDeckLayer(map) {
+  const firstLabelLayerId = "oceanLayer";
+  const {
+    MapboxOverlay,
+    ScatterplotLayer,
+    ArcLayer,
+    GeoJsonLayer,
+    IconLayer,
+    MVTLayer,
+    PathStyleExtension,
+    DataFilterExtension,
+  } = deck;
+
+  const extensionsMap = {
+    PathStyleExtension: PathStyleExtension,
+    DataFilterExtension: DataFilterExtension,
+  };
+  console.log("deck", deck);
+  const deckOverlay = new MapboxOverlay({
+    interleaved: true,
+    layers: [
+      new ScatterplotLayer({
+        id: "deckgl-circle",
+        data: [
+          { position: [-122.402, 37.79], color: [255, 0, 0], radius: 1000 },
+        ],
+        getPosition: (d) => d.position,
+        getFillColor: (d) => d.color,
+        getRadius: (d) => d.radius,
+        opacity: 0.3,
+        beforeId: firstLabelLayerId,
+      }),
+      new ArcLayer({
+        id: "deckgl-arc",
+        data: [
+          {
+            source: [-122.3998664, 37.7883697],
+            target: [-122.400068, 37.7900503],
+          },
+        ],
+        getSourcePosition: (d) => d.source,
+        getTargetPosition: (d) => d.target,
+        getSourceColor: [255, 208, 0],
+        getTargetColor: [0, 128, 255],
+        getWidth: 8,
+      }),
+      new GeoJsonLayer({
+        id: "GeoJsonLayer",
+        data: "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/bart.geo.json",
+
+        stroked: false,
+        filled: true,
+        pointType: "circle+text",
+        pickable: true,
+
+        getFillColor: [160, 160, 180, 200],
+        getLineWidth: 20,
+        getPointRadius: 4,
+        getText: (f) => f.properties.name,
+        getTextSize: 12,
+      }),
+      // MVT 图层绘制
+      new MVTLayer({
+        binary: false,
+        maxCacheSize: 100,
+        id: `BaseBusinessLayer`,
+        data: "https://aips.siniswift.com/gis/spaces/features/BASE/{z}_{x}_{y}.mvt",
+        // data:url,
+        pickable: false,
+        subLayers: subLayers,
+        loadOptions: {},
+        renderSubLayers: (props) => {
+          console.log("props", props);
+          let allData = {};
+          if (props.data != null) {
+            props.data.forEach((feature) => {
+              let spaceId = feature.properties.spaceId;
+              allData[spaceId] = allData[spaceId] || [];
+              props.subLayers.forEach((data) => {
+                if (data.dataKey === spaceId && !data.needSpecificFilter) {
+                  allData[spaceId].push(feature);
+                } else if (
+                  data.dataKey === spaceId &&
+                  data.needSpecificFilter &&
+                  data.specificField
+                ) {
+                  let judgeIf = data.getSpecificData(
+                    feature,
+                    data.specificField
+                  );
+                  if (judgeIf) {
+                    allData[spaceId].push(feature);
+                  }
+                }
+              });
+            });
+          }
+          const baseLayer = new _BaseMvtLayer(props, {
+            id: props.id,
+            data: allData,
+            layersVisible: {
+              segment: true,
+              ad_hp: true,
+              ndb: true,
+              vor: true,
+              designated_point: true,
+              airspace_line: true,
+              controlled_line: false,
+              restricted_line: false,
+            },
+            sublayers: subLayers,
+            opacity: 1,
+          });
+          console.log("baseLayer", baseLayer);
+          return [baseLayer];
+        },
+        beforeId: firstLabelLayerId,
+      }),
+      new MVTLayer({
+        minZoom: 0,
+        maxZoom: 14,
+        getLineColor: [255, 0, 0],
+        getLineWidth: 1,
+        lineWidthMinPixels: 1,
+        pickable: true,
+        id: `my-mvt-layer`,
+        data: "https://aips.siniswift.com/gis/spaces/features/BASE/{z}_{x}_{y}.mvt",
+        renderSubLayers: ({ tile}) => {
+          console.log(tile)
+          return new deck.GeoJsonLayer({
+            id: `mvt-sub-layer-${tile.index.x}-${tile.index.y}-${tile.index.z}`,
+            data: tile.data,
+            stroked: true,
+            filled: true,
+            lineWidthScale: 2,
+            getFillColor: [0, 0, 255, 100],
+            getLineColor: [0, 0, 0, 200],
+            getLineWidth: 1,
+            pickable: true,
+            onClick: (info) => {
+              if (info.object) {
+                console.log("Clicked feature:", info.object.properties);
+              }
+            },
+          });
+        },
+        beforeId: firstLabelLayerId,
+      }),
+    ],
+  });
+  map.addControl(deckOverlay);
+  // 获取全部图层
+  console.log("map.getStyle()", deckOverlay, map.getStyle());
 }
 
 function addMVT(map) {
@@ -139,24 +296,24 @@ function addMVT(map) {
         paint: {},
       });
       // 航路点
-      map.addLayer({
-        id: "line-label-layer",
-        type: "symbol",
-        source: "baseMvt",
-        "source-layer": "segment_202507",
-        layout: {
-          "icon-image": "triangle-icon",
-          "icon-size": 1,
-          "symbol-z-order": "viewport-y",
-          "text-field": ["get", "codePointStart"],
-          "text-font": ["Open Sans Italic"],
-          "text-size": 12,
-          "text-offset": [0, 1],
-        },
-        paint: {
-          "text-color": "#ff0000",
-        },
-      });
+      // map.addLayer({
+      //   id: "line-label-layer",
+      //   type: "symbol",
+      //   source: "baseMvt",
+      //   "source-layer": "segment_202507",
+      //   layout: {
+      //     "icon-image": "triangle-icon",
+      //     "icon-size": 1,
+      //     "symbol-z-order": "viewport-y",
+      //     "text-field": ["get", "codePointStart"],
+      //     "text-font": ["Open Sans Italic"],
+      //     "text-size": 12,
+      //     "text-offset": [0, 1],
+      //   },
+      //   paint: {
+      //     "text-color": "#ff0000",
+      //   },
+      // });
       // administrative 图层 行政区域
       map.addLayer(
         {
