@@ -1,4 +1,4 @@
-var { VectorTile, VectorTileLayer} = require('@mapbox/vector-tile');
+var { VectorTile, VectorTileLayer } = require('@mapbox/vector-tile');
 var Protobuf = require('pbf');
 
 const TILE_URL = 'https://aips.siniswift.com/gis/spaces/features/BASE/8_213_104.mvt';
@@ -11,7 +11,7 @@ fetch(TILE_URL).then(async response => {
     Object.keys(tile.layers).map(layerID => {
 
         const layer = tile.layers[layerID];
-        if (layer.name === 'segment_202507') {
+        if (layer.name === 'restricted_line_202507') {
             console.log(layer.feature(1).properties)
         }
     })
