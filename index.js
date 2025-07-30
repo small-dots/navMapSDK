@@ -1,5 +1,5 @@
 const MAP_CONTAINER_ID = "map";
-const MAP_CENTER = [-122.447303, 37.753574];
+const MAP_CENTER = [122.447303, 37.753574];
 const MAP_ZOOM = 0;
 const MVT_SOURCE_ID = "contours8989";
 const TILE_KEY = "get_your_own_OpIi9ZULNHzrESv6T2vL";
@@ -10,13 +10,101 @@ const MVT_TILES = [
 const MVT_MINZOOM = 0;
 const MVT_MAXZOOM = 15;
 
+
 window.addEventListener("DOMContentLoaded", () => {
+    // initDeckmap()
     initMap().then((map) => {
         addMVT(map);
         setupDeckLayer(map);
         setupLayerControlPanel(map);
     });
 });
+
+function initDeckmap() {
+    const {
+        MVTLayer,
+        Deck,
+        GeoJsonLayer
+    } = deck;
+    console.log(deck)
+    const layer = new MVTLayer({
+        binary: false,
+        id: 'MVTLayer',
+        data: [
+            'https://aips.siniswift.com/gis/spaces/features/BASE/{z}_{x}_{y}.mvt'
+        ],
+        maxCacheSize: 100,
+        minZoom: 0,
+        maxZoom: 20,
+        positionFormat: 'XY',
+        subLayers: subLayers,
+        renderSubLayers: (props) => {
+            console.log('props', props);
+            let allData = {};
+
+            if (props.data != null && props.subLayers != null) {
+                // 将 subLayers 按 dataKey 归类
+                const subLayerMap = {};
+                props.subLayers.forEach(sub => {
+                    const key = sub.dataKey;
+                    if (!subLayerMap[key]) subLayerMap[key] = [];
+                    subLayerMap[key].push(sub);
+                });
+
+                props.data.forEach((feature) => {
+                    const spaceId = feature.properties.spaceId;
+                    const relevantLayers = subLayerMap[spaceId];
+                    if (!relevantLayers) return;
+
+                    allData[spaceId] = allData[spaceId] || [];
+
+                    for (const data of relevantLayers) {
+                        if (!data.needSpecificFilter) {
+                            allData[spaceId].push(feature);
+                            break; // 不需要继续判断其他 sublayer
+                        } else if (data.specificField && data.getSpecificData(feature, data.specificField)) {
+                            allData[spaceId].push(feature);
+                            break;
+                        }
+                    }
+                });
+            }
+
+            const baseLayer = new _BaseMvtLayer(props, {
+                id: props.id,
+                data: allData,
+                layersVisible: layersVisible,
+                sublayers: props.subLayers,
+                opacity: props.opacity,
+            });
+
+            console.log('------baseLayer', baseLayer);
+            return [baseLayer];
+        }
+
+    });
+    new Deck({
+        canvas: 'map-canvas',
+        initialViewState: {
+            latitude: 30,
+            longitude: 105,
+            zoom: 1.1,
+            bearing: 0,
+            pitch: 0,
+            minZoom: 1,
+            maxZoom: 15,
+        },
+        parameters: {
+            cull: true,
+            depthTest: false,
+        },
+        controller: true,
+        useDevicePixels: true,
+        maxCacheSize: 50,
+        pickingRadius: 3,
+        layers: [layer]
+    });
+}
 
 function initMap() {
     return new Promise(async (resolve, reject) => {
@@ -47,7 +135,6 @@ function setupDeckLayer(map) {
         PathStyleExtension,
         DataFilterExtension,
     } = deck;
-
     const extensionsMap = {
         PathStyleExtension: PathStyleExtension,
         DataFilterExtension: DataFilterExtension,
@@ -56,144 +143,61 @@ function setupDeckLayer(map) {
     const deckOverlay = new MapboxOverlay({
         interleaved: true,
         layers: [
-            new ScatterplotLayer({
-                id: "deckgl-circle",
-                data: [
-                    { position: [-122.402, 37.79], color: [255, 0, 0], radius: 1000 },
-                ],
-                getPosition: (d) => d.position,
-                getFillColor: (d) => d.color,
-                getRadius: (d) => d.radius,
-                opacity: 0.3,
-                beforeId: firstLabelLayerId,
-            }),
-            new ArcLayer({
-                id: "deckgl-arc",
-                data: [
-                    {
-                        source: [-122.3998664, 37.7883697],
-                        target: [-122.400068, 37.7900503],
-                    },
-                ],
-                getSourcePosition: (d) => d.source,
-                getTargetPosition: (d) => d.target,
-                getSourceColor: [255, 208, 0],
-                getTargetColor: [0, 128, 255],
-                getWidth: 8,
-            }),
-            new GeoJsonLayer({
-                id: 'airports',
-                data: 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_airports.geojson',
-                filled: true,
-                lineWidthMinPixels: 1,
-                getFillColor: [255, 255, 255],
-                pointRadiusMinPixels: 2,
-                pointRadiusScale: 2000,
-                getPointRadius: f => 11 - f.properties.scalerank,
-                pickable: true,
-                autoHighlight: true,
-            }),
-            // new GeoJsonLayer({
-            //     id: 'dataj',
-            //     data: Array.isArray(dataj)
-            //         ? dataj.map(f => {
-            //             // 仅处理Feature类型
-            //             if (f && f.geometry && Array.isArray(f.geometry.coordinates)) {
-            //                 let newF = JSON.parse(JSON.stringify(f));
-            //                 // 只处理Point/LineString/Polygon
-            //                 if (f.geometry.type === 'Point') {
-            //                     newF.geometry.coordinates = f.geometry.coordinates.map(c => c * 100);
-            //                 } else if (f.geometry.type === 'LineString') {
-            //                     newF.geometry.coordinates = f.geometry.coordinates.map(coord => coord.map(c => c * 100));
-            //                 } else if (f.geometry.type === 'Polygon') {
-            //                     newF.geometry.coordinates = f.geometry.coordinates.map(ring => ring.map(coord => coord.map(c => c * 100)));
-            //                 }
-            //                 return newF;
-            //             }
-            //             return f;
-            //         })
-            //         : dataj,
-            //     filled: false,
-            //     lineWidthMinPixels: 1,
-            //     getFillColor: [255, 0, 0],
-            //     pointRadiusMinPixels: 2,
-            //     pointRadiusScale: 2000,
-            //     getPointRadius: f => 11 - f.properties.scalerank,
-            //     pickable: true,
-            //     autoHighlight: true,
-            // }),
             new MVTLayer({
                 binary: false,
-                // minZoom: 0,
-                // maxZoom: 14,
-                getLineColor: [255, 0, 0],
-                getLineWidth: 1,
-                lineWidthMinPixels: 1,
-                pickable: true,
+                maxCacheSize: 100,
+                minZoom: 0,
+                maxZoom: 20,
                 id: `my-mvt-layer`,
                 // tileSize: 256, // 尝试不同的瓦片大小
-                data: "https://aips.siniswift.com/gis/spaces/features/BASE/{z}_{x}_{y}.mvt",
+                data: [
+                    'https://aips.siniswift.com/gis/spaces/features/BASE/{z}_{x}_{y}.mvt',
+                    'https://aips.siniswift.com/gis/spaces/features/NATURE/{z}_{x}_{y}.mvt'
+                ],
+                subLayers: subLayers,
+                renderSubLayers: (props) => {
+                    console.log('props', props);
+                    let allData = {};
 
-                renderSubLayers: (prop) => {
-                    const { tile } = prop;
-                    console.log('tile', prop)
-                    // 放大所有坐标100倍
-                    const num = 512
-                    function scaleCoords(geom) {
-                        if (!geom || !geom.type || !geom.coordinates) return geom;
-                        let g = JSON.parse(JSON.stringify(geom));
-                        if (g.type === 'Point') {
-                            g.coordinates = g.coordinates.map(c => c * num);
-                        } else if (g.type === 'LineString') {
-                            g.coordinates = g.coordinates.map(coord => coord.map(c => c * num));
-                        } else if (g.type === 'Polygon') {
-                            g.coordinates = g.coordinates.map(ring => ring.map(coord => coord.map(c => c * num)));
-                        } else if (g.type === 'MultiPoint') {
-                            g.coordinates = g.coordinates.map(coord => coord.map(c => c * num));
-                        } else if (g.type === 'MultiLineString') {
-                            g.coordinates = g.coordinates.map(line => line.map(coord => coord.map(c => c * num)));
-                        } else if (g.type === 'MultiPolygon') {
-                            g.coordinates = g.coordinates.map(poly => poly.map(ring => ring.map(coord => coord.map(c => c * num))));
-                        }
-                        return g;
-                    }
-                    let data = tile.data;
-                    if (Array.isArray(data)) {
-                        data = data.map(f => {
-                            if (f && f.geometry) {
-                                let newF = JSON.parse(JSON.stringify(f));
-                                newF.geometry = scaleCoords(f.geometry);
-                                return newF;
-                            }
-                            return f;
+                    if (props.data != null && props.subLayers != null) {
+                        // 将 subLayers 按 dataKey 归类
+                        const subLayerMap = {};
+                        props.subLayers.forEach(sub => {
+                            const key = sub.dataKey;
+                            if (!subLayerMap[key]) subLayerMap[key] = [];
+                            subLayerMap[key].push(sub);
                         });
-                    } else if (data && data.type === 'FeatureCollection' && Array.isArray(data.features)) {
-                        data = {
-                            ...data,
-                            features: data.features.map(f => {
-                                if (f && f.geometry) {
-                                    let newF = JSON.parse(JSON.stringify(f));
-                                    newF.geometry = scaleCoords(f.geometry);
-                                    return newF;
+
+                        props.data.forEach((feature) => {
+                            const spaceId = feature.properties.spaceId;
+                            const relevantLayers = subLayerMap[spaceId];
+                            if (!relevantLayers) return;
+
+                            allData[spaceId] = allData[spaceId] || [];
+
+                            for (const data of relevantLayers) {
+                                if (!data.needSpecificFilter) {
+                                    allData[spaceId].push(feature);
+                                    break; // 不需要继续判断其他 sublayer
+                                } else if (data.specificField && data.getSpecificData(feature, data.specificField)) {
+                                    allData[spaceId].push(feature);
+                                    break;
                                 }
-                                return f;
-                            })
-                        };
+                            }
+                        });
                     }
-                    console.log('data', data)
-                    return new GeoJsonLayer({
-                        id: `mvt-sub-layer-${tile.index.x}-${tile.index.y}-${tile.index.z}`,
-                        data: data,
-                        filled: false,
-                        lineWidthMinPixels: 2,
-                        getFillColor: [255, 0, 0],
-                        // pointRadiusMinPixels: 2,
-                        // pointRadiusScale: 2000,
-                        // getPointRadius: f => 11 - f.properties.scalerank,
-                        pickable: true,
-                        autoHighlight: true,
+
+                    const baseLayer = new _BaseMvtLayer(props, {
+                        id: props.id,
+                        data: allData,
+                        layersVisible: layersVisible,
+                        sublayers: props.subLayers,
+                        opacity: props.opacity,
                     });
-                },
+
+                    console.log('------baseLayer', baseLayer);
+                    return [baseLayer];
+                }
             }),
         ],
     });

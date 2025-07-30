@@ -6,7 +6,7 @@ const {
   DataFilterExtension,
 } = deck;
 
-const defaultProps = {};
+const defaultProps1 = {};
 const extensionMap = {
   PathStyleExtension: PathStyleExtension,
   DataFilterExtension: DataFilterExtension,
@@ -14,6 +14,7 @@ const extensionMap = {
 const layerMap = {
   GeoJsonLayer: GeoJsonLayer,
   IconLayer: IconLayer,
+  NavArcLayer: NavArcLayer
 };
 
 function writeProps(props, overrideProps, layersVisible, viewport) {
@@ -91,8 +92,7 @@ class _BaseMvtLayer extends CompositeLayer {
 
     allProps.forEach((props) => {
       if (
-        props.layerType !== "NavArcLayer" &&
-        props.layerType !== "IconLayer"
+        props.layerType !== "NavArcLayer"
       ) {
         console.log("props.layerType", props.layerType);
         let overrideProps = {};
@@ -100,7 +100,6 @@ class _BaseMvtLayer extends CompositeLayer {
         overrideProps.id = `${id}-${props.id}`;
         writeProps(props, overrideProps, layersVisible, viewport);
         let parentProps = props.layerType != "NavArcLayer" ? this.props : {};
-        console.log("-------------", parentProps, props, overrideProps);
         let Layer = new layerMap[props.layerType](
           parentProps,
           props,
@@ -108,12 +107,6 @@ class _BaseMvtLayer extends CompositeLayer {
           { beforeId: "oceanLayer" }
         );
 
-        console.log("里面的图层", Layer);
-
-        // if (props.dataKey == "mga") {
-        //   console.log(Layer);
-
-        // }
         Layers.push(Layer);
       }
     });
@@ -123,4 +116,4 @@ class _BaseMvtLayer extends CompositeLayer {
 }
 
 _BaseMvtLayer.layerName = "_BaseMvtLayer";
-_BaseMvtLayer.defaultProps = defaultProps;
+_BaseMvtLayer.defaultProps = defaultProps1;
