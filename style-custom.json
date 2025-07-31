@@ -36,9 +36,29 @@
             ],
             "minzoom": 0,
             "maxzoom": 24
+        },
+        "osm": {
+            "id": "osm",
+            "type": "raster",
+            "tiles": [
+                "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            ],
+            "tileSize": 256,
+            "attribution": "&copy; OpenStreetMap Contributors",
+            "maxzoom": 19
+        },
+        "terrainSource": {
+            "type": "raster-dem",
+            "url": "https://demotiles.maplibre.org/terrain-tiles/tiles.json",
+            "tileSize": 256
+        },
+        "hillshadeSource": {
+            "type": "raster-dem",
+            "url": "https://demotiles.maplibre.org/terrain-tiles/tiles.json",
+            "tileSize": 256
         }
     },
-    "sprite": "https://tiles.basemaps.cartocdn.com/gl/dark-matter-gl-style/sprite",
+    "sprite": "http://127.0.0.1:1001/sprite",
     "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
     "layers": [
         {
@@ -56,6 +76,7 @@
             "type": "symbol",
             "source": "baseMvt",
             "source-layer": "ad_hp_202507",
+            "minzoom": 5,
             "layout": {
                 "icon-image": "airport-icon",
                 "icon-size": 0.1,
@@ -64,13 +85,10 @@
                     "get",
                     "codeId"
                 ],
-                "text-font": [
-                    "Open Sans Italic"
-                ],
                 "text-size": 12,
                 "text-offset": [
                     0,
-                    1
+                    1.2
                 ]
             },
             "paint": {
@@ -85,13 +103,14 @@
             "paint": {
                 "line-color": "#434340",
                 "line-opacity": 0.8,
-                "line-width": 2
+                "line-width": 1
             }
         },
         {
             "id": "segmentLayer",
             "type": "line",
             "source": "baseMvt",
+            "minzoom": 5,
             "source-layer": "segment_202507",
             "paint": {
                 "line-color": "#162626",
@@ -104,21 +123,47 @@
             "type": "line",
             "source": "baseMvt",
             "source-layer": "controlled_line_202507",
+            "minzoom": 5,
             "paint": {
                 "line-color": "#0A8A24",
-                "line-opacity": 0.8,
-                "line-width": 1
+                "line-opacity": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    3,
+                    0,
+                    4,
+                    0.5,
+                    6,
+                    1
+                ],
+                "line-width": 5,
+                "line-pattern": "pattern-blue"
+            },
+            "layout": {
+                "line-join": "round",
+                "line-cap": "round"
             }
         },
         {
             "id": "restrictedLayer",
             "type": "line",
             "source": "baseMvt",
+            "minzoom": 5,
             "source-layer": "restricted_line_202507",
+            "layout": {
+                "line-join": "round",
+                "line-cap": "round"
+            },
             "paint": {
                 "line-color": "#F6A708",
-                "line-opacity": 0.8,
-                "line-width": 1
+                "line-opacity": 1,
+                "line-width": 5,
+                "line-pattern": "pattern-orange"
             }
         },
         {
@@ -126,6 +171,7 @@
             "type": "circle",
             "source": "baseMvt",
             "source-layer": "vor_202507",
+            "minzoom": 6,
             "paint": {
                 "circle-color": "#CD97F0",
                 "circle-opacity": 0.8,
@@ -137,6 +183,7 @@
             "type": "circle",
             "source": "baseMvt",
             "source-layer": "ndb_202507",
+            "minzoom": 6,
             "paint": {
                 "circle-color": "#CD97F0",
                 "circle-opacity": 0.8,

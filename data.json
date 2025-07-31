@@ -1,0 +1,3954 @@
+{
+  "airspace_line": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1,
+            0.18017578125
+          ],
+          [
+            0.60009765625,
+            0.18017578125
+          ],
+          [
+            0.767578125,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "area": 830.100220435,
+        "codeId": "RJJJ",
+        "centerX": 148.041675,
+        "centerY": 36.083349999999996,
+        "spaceId": "airspace_line",
+        "txtName": "FUKUOKA",
+        "codeType": "FIR",
+        "featureId": "578e3a93-b68d-4103-956c-a548f9aee94e",
+        "airspaceId": "aadee0d8-da4c-4514-be3c-7d24f7a1c4e0",
+        "txtLocalType": "FIR",
+        "valDistVerUpper": "99999.0",
+        "codeDistVerUpper": "HEI",
+        "layerName": "airspace_line_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              0.60009765625,
+              0.18017578125
+            ],
+            [
+              0,
+              0.18017578125
+            ]
+          ],
+          [
+            [
+              0.767578125,
+              0
+            ],
+            [
+              0.60009765625,
+              0.18017578125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "area": 28.44833400000001,
+        "codeId": "RCAA",
+        "centerX": 122.36222225,
+        "centerY": 25.742778,
+        "spaceId": "airspace_line",
+        "txtName": "TAIPEI",
+        "codeType": "FIR",
+        "featureId": "7dcebdb7-19d8-418d-bcd2-c6e0f438a787",
+        "airspaceId": "3d15fa33-515f-4786-948f-4d9df5f79c64",
+        "txtLocalType": "FIR",
+        "valDistVerUpper": "99999.0",
+        "codeDistVerUpper": "HEI",
+        "layerName": "airspace_line_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            0.18017578125
+          ],
+          [
+            1,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "area": 246.23745,
+        "codeId": "RPHI",
+        "centerX": 122,
+        "centerY": 13.58335,
+        "spaceId": "airspace_line",
+        "txtName": "MANILA",
+        "codeType": "FIR",
+        "featureId": "237dc043-d140-405d-8d6f-b58f0d10c913",
+        "airspaceId": "01719fcc-c6ec-4e21-929a-bdfba7dfa5e3",
+        "txtLocalType": "FIR",
+        "valDistVerUpper": "99999.0",
+        "codeDistVerUpper": "HEI",
+        "layerName": "airspace_line_202507"
+      }
+    }
+  ],
+  "ad_hp": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.64501953125,
+          0.945556640625
+        ]
+      },
+      "properties": {
+        "adHpId": "cb571592-a182-4c59-b65f-f746bf6367ee",
+        "codeId": "RPUY",
+        "geoLat": "N16554700",
+        "codeFir": "RPHI",
+        "geoLong": "E121451200",
+        "spaceId": "ad_hp",
+        "txtName": "CAUAYAN PRINCIPAL AIRPORT",
+        "valElev": "200.0",
+        "codeIata": "CYZ",
+        "codeIcao": "RPUY",
+        "featureId": "6d557fdd-f0ef-4c94-a0d3-b22a2d3156ba",
+        "valMagVar": "-2.2",
+        "uomLongRwy": "FL",
+        "valLongRwy": 79,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.641357421875,
+          0.8125
+        ]
+      },
+      "properties": {
+        "adHpId": "389239e1-ecb3-4d3c-9413-7c3f16e53545",
+        "codeId": "RPUT",
+        "geoLat": "N17383700",
+        "codeFir": "RPHI",
+        "geoLong": "E121435900",
+        "spaceId": "ad_hp",
+        "txtName": "TUGUEGARAO PRINCIPAL AIRPORT",
+        "valElev": "75.0",
+        "codeIata": "TUG",
+        "codeIcao": "RPUT",
+        "featureId": "44cbfe68-ad34-47ba-b3c2-a2f5d13ecf57",
+        "valMagVar": "-3",
+        "uomLongRwy": "FL",
+        "valLongRwy": 64,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.395751953125,
+          0.829345703125
+        ]
+      },
+      "properties": {
+        "adHpId": "960b202a-6cb7-4dab-9058-f170c70c5381",
+        "codeId": "RPUQ",
+        "geoLat": "N17331400",
+        "codeFir": "RPHI",
+        "geoLong": "E120210500",
+        "spaceId": "ad_hp",
+        "txtName": "VIGAN COMMUNITY AIRPORT",
+        "valElev": "34.0",
+        "codeIcao": "RPUQ",
+        "featureId": "fc743b09-684d-4de3-acc7-1eac40bf3631",
+        "valMagVar": "-2.2",
+        "uomLongRwy": "FL",
+        "valLongRwy": 48,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.685302734375,
+          0.284423828125
+        ]
+      },
+      "properties": {
+        "adHpId": "7c0793cb-fbe5-4660-9537-81e39eeb76f9",
+        "codeId": "RPUO",
+        "geoLat": "N20270500",
+        "codeFir": "RPHI",
+        "geoLong": "E121584900",
+        "spaceId": "ad_hp",
+        "txtName": "BASCO PRINCIPAL AIRPORT",
+        "valElev": "309.0",
+        "codeIata": "BSO",
+        "codeIcao": "RPUO",
+        "featureId": "d4ec2bb1-4d91-4c29-b11a-6ce917b3eee6",
+        "valMagVar": "-3",
+        "uomLongRwy": "FL",
+        "valLongRwy": 41,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.657958984375,
+          0.2333984375
+        ]
+      },
+      "properties": {
+        "adHpId": "3d3d661c-b4f9-4924-a92b-7b6de186bbfc",
+        "codeId": "RPLT",
+        "geoLat": "N20431429",
+        "codeFir": "RPHI",
+        "geoLong": "E121493531",
+        "spaceId": "ad_hp",
+        "txtName": "ITBAYAT COMMUNITY AIRPORT",
+        "valElev": "323.0",
+        "codeIcao": "RPLT",
+        "featureId": "976d79ae-c849-404a-a478-f96570823e46",
+        "valMagVar": "-3.1",
+        "uomLongRwy": "FL",
+        "valLongRwy": 26,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.765625,
+          0.920654296875
+        ]
+      },
+      "properties": {
+        "adHpId": "d744eb80-8c87-4ffc-840f-b11fca8d342d",
+        "codeId": "RPLN",
+        "geoLat": "N17034800",
+        "codeFir": "RPHI",
+        "geoLong": "E122255600",
+        "spaceId": "ad_hp",
+        "txtName": "PALANAN COMMUNITY AIRPORT",
+        "valElev": "167.0",
+        "codeIcao": "RPLN",
+        "featureId": "06290c42-009a-432e-8c6f-b1df1adc3cf5",
+        "valMagVar": "-2.3",
+        "uomLongRwy": "FL",
+        "valLongRwy": 33,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.427734375,
+          0.713134765625
+        ]
+      },
+      "properties": {
+        "adHpId": "6a4eac6a-5b77-40d6-8d52-c3b65c79f80a",
+        "codeId": "RPLI",
+        "geoLat": "N18103400",
+        "codeFir": "RPHI",
+        "geoLong": "E120315200",
+        "spaceId": "ad_hp",
+        "txtName": "LAOAG INTERNATIONAL AIRPORT",
+        "valElev": "24.0",
+        "codeIata": "LAO",
+        "codeIcao": "RPLI",
+        "featureId": "f1417ef3-def7-47f2-ae42-49bccfb467ec",
+        "valMagVar": "-2.4",
+        "uomLongRwy": "FL",
+        "valLongRwy": 91,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.643798828125,
+          0.7119140625
+        ]
+      },
+      "properties": {
+        "adHpId": "cb852b09-b393-4148-84d9-b4c2a19aac9b",
+        "codeId": "RPLH",
+        "geoLat": "N18105600",
+        "codeFir": "RPHI",
+        "geoLong": "E121444600",
+        "spaceId": "ad_hp",
+        "txtName": "LALLO PRINCIPAL AIRPORT",
+        "valElev": "66.0",
+        "codeIcao": "RPLH",
+        "featureId": "42c83344-33c7-411c-88d7-a8f5d50dc0d9",
+        "valMagVar": "-2.9",
+        "uomLongRwy": "FL",
+        "valLongRwy": 69,
+        "codeIcaoArea": "RP",
+        "codeTypeMilOps": "CIV",
+        "layerName": "ad_hp_202507"
+      }
+    }
+  ],
+  "adiz_line": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.767578125,
+            0
+          ],
+          [
+            0.60009765625,
+            0.18017578125
+          ],
+          [
+            0,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "area": 42.875,
+        "codeId": "NADIZ_015",
+        "centerX": 120.25,
+        "centerY": 25.75,
+        "spaceId": "adiz_line",
+        "txtName": "TAIWAN ADIZ",
+        "codeType": "N",
+        "featureId": "36fa62a1-c691-4be4-acd8-e7547cbfb440",
+        "airspaceId": "993a33a7-7d3c-41ea-bfdd-d0b9f480ab58",
+        "txtLocalType": "UR",
+        "layerName": "adiz_line_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            0.18017578125
+          ],
+          [
+            1,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "area": 80.86733289000001,
+        "codeId": "NADIZ_009",
+        "centerX": 121.00099124423963,
+        "centerY": 16.4983,
+        "spaceId": "adiz_line",
+        "txtName": "PHILIPPINE ADIZ",
+        "codeType": "N",
+        "featureId": "e4cd981f-692a-4837-bc0e-535a44d2028a",
+        "airspaceId": "c1baced8-bacb-4a51-84de-5d3dbdec5494",
+        "txtLocalType": "UR",
+        "layerName": "adiz_line_202507"
+      }
+    }
+  ],
+  "segment": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.926513671875,
+            0.81982421875
+          ],
+          [
+            0.72998046875,
+            0.776611328125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 122.230528,
+        "endY": 17.836167,
+        "startX": 123.336556,
+        "startY": 17.604611,
+        "txtRmk": "",
+        "valLen": "64.8",
+        "centerX": 122.783542,
+        "centerY": 17.720388999999997,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M501",
+        "segmentId": "3f2e7af8-696c-41cd-a86d-57440a1652d1",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "285",
+        "codePointEnd": "DADNU",
+        "txtDesigHigh": "21000FT",
+        "codePointStart": "EXOMI",
+        "valReversMagTrack": "105",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.2734375,
+            0.634033203125
+          ],
+          [
+            0.445068359375,
+            0.480712890625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.628472,
+        "endY": 19.414111,
+        "startX": 119.663611,
+        "startY": 18.597889,
+        "txtRmk": "",
+        "valLen": "73.0",
+        "centerX": 120.1460415,
+        "centerY": 19.006,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "d6e3a794-0f0e-4530-9ba0-3b5b11d91d8b",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "51",
+        "codePointEnd": "ABVAR",
+        "codePointStart": "ALDIS",
+        "txtDesigForward": "L625",
+        "valReversMagTrack": "231",
+        "txtDesigHighForward": "15000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.533447265625,
+            0
+          ],
+          [
+            0.442626953125,
+            0.073486328125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.615278,
+        "endY": 21.559722,
+        "startX": 121.186667,
+        "startY": 21.989444,
+        "txtRmk": "",
+        "valLen": "41.0",
+        "centerX": 120.90097250000001,
+        "centerY": 21.774583,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "27702a8b-7b74-4448-be09-dbf04d37f71a",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "235",
+        "codePointEnd": "GLOOM",
+        "codePointStart": "PICHU",
+        "txtDesigForward": "Q13",
+        "valReversMagTrack": "55",
+        "txtDesigHighForward": "29000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.39697265625,
+            0.98291015625
+          ],
+          [
+            0.40185546875,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.671694,
+        "endY": 15.686722,
+        "startX": 120.358056,
+        "startY": 16.728333,
+        "txtRmk": "",
+        "valLen": "65.0",
+        "centerX": 120.514875,
+        "centerY": 16.207527499999998,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "a62d256f-11eb-4f7d-85ec-d07300d5b05a",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "167",
+        "codePointEnd": "ESCAN",
+        "txtDesigHigh": "10000FT",
+        "codePointStart": "SANRO",
+        "valReversMagTrack": "347",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.148193359375,
+            0.747314453125
+          ],
+          [
+            0.39697265625,
+            0.98291015625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.358056,
+        "endY": 16.728333,
+        "startX": 118.958639,
+        "startY": 17.993361,
+        "txtRmk": "",
+        "valLen": "110.0",
+        "centerX": 119.6583475,
+        "centerY": 17.360847,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "A461",
+        "segmentId": "cc299188-3664-4c69-b7aa-86061d4b901a",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "136",
+        "codePointEnd": "SANRO",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "AVMUP",
+        "valReversMagTrack": "316",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.148193359375,
+            0.747314453125
+          ],
+          [
+            0.2734375,
+            0.634033203125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.663611,
+        "endY": 18.597889,
+        "startX": 118.958639,
+        "startY": 17.993361,
+        "txtRmk": "",
+        "valLen": "54.0",
+        "centerX": 119.311125,
+        "centerY": 18.295625,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "1ae69225-6de7-489a-abdb-7eb7bcf0da67",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "51",
+        "codePointEnd": "ALDIS",
+        "codePointStart": "AVMUP",
+        "txtDesigForward": "L625",
+        "valReversMagTrack": "231",
+        "txtDesigHighForward": "15000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4169921875,
+            0.8056640625
+          ],
+          [
+            0.408203125,
+            0.88330078125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.420972,
+        "endY": 17.264333,
+        "startX": 120.469972,
+        "startY": 17.680028,
+        "txtRmk": "",
+        "valLen": "25.0",
+        "centerX": 120.445472,
+        "centerY": 17.4721805,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "2faa8a9c-d129-44cd-8761-043688b1d114",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "186",
+        "codePointEnd": "MELAN",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "KINLA",
+        "valReversMagTrack": "6",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.491455078125,
+            0.781005859375
+          ],
+          [
+            0.580810546875,
+            0.876953125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.391944,
+        "endY": 17.298611,
+        "startX": 120.88875,
+        "startY": 17.813389,
+        "txtRmk": "",
+        "valLen": "42.0",
+        "centerX": 121.14034699999998,
+        "centerY": 17.556,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W2",
+        "segmentId": "3925c37a-4732-45c4-8270-0fbaad8860f8",
+        "codeHighlow": "B",
+        "valMagTrack": "140",
+        "codePointEnd": "DYERA",
+        "txtDesigHigh": "11000FT",
+        "codePointStart": "PAMKI",
+        "valReversMagTrack": "320",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.39697265625,
+            0.98291015625
+          ],
+          [
+            0.399169921875,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.49575,
+        "endY": 15.684778,
+        "startX": 120.358056,
+        "startY": 16.728333,
+        "txtRmk": "",
+        "valLen": "63.0",
+        "centerX": 120.42690300000001,
+        "centerY": 16.2065555,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W4",
+        "segmentId": "61d3413d-cc7d-4899-80fe-b1f80c6024ff",
+        "codeHighlow": "B",
+        "valMagTrack": "176",
+        "codePointEnd": "MALIB",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "SANRO",
+        "valReversMagTrack": "356",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.442626953125,
+            0.073486328125
+          ],
+          [
+            0.46826171875,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.758333,
+        "endY": 21,
+        "startX": 120.615278,
+        "startY": 21.559722,
+        "txtRmk": "",
+        "valLen": "34.4",
+        "centerX": 120.68680549999999,
+        "centerY": 21.279861,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "Q14",
+        "segmentId": "53eea370-2570-46b0-ba8d-28557c566423",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "170",
+        "codePointEnd": "POTIB",
+        "txtDesigHigh": "29000FT",
+        "codePointStart": "GLOOM",
+        "valReversMagTrack": "350",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.88232421875,
+            1
+          ],
+          [
+            1,
+            0.9326171875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 124.426833,
+        "endY": 17.369778,
+        "startX": 122.678667,
+        "startY": 16.411444,
+        "txtRmk": "",
+        "valLen": "115.7",
+        "centerX": 123.55275,
+        "centerY": 16.890611,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "b5d32211-edc9-438e-bed4-187957bd74d4",
+        "codeHighlow": "B",
+        "valMagTrack": "63",
+        "codePointEnd": "VIGOR",
+        "codePointStart": "PIBEM",
+        "txtDesigForward": "R597",
+        "valReversMagTrack": "243",
+        "txtDesigHighForward": "9000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.07861328125,
+            0
+          ],
+          [
+            0,
+            0.0615234375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 117.5,
+        "endY": 21.166667,
+        "startX": 120.206194,
+        "startY": 23.135306,
+        "txtRmk": "J1\r\nRoute Remarks:\n1. Available from 1400UTC to 2100UTC daily and the clearance may be withdrawn in case of military operation requirement. \n2. This transition route shall not be filed in flight plan. \n3. This transition route shall be approved by ATC under radar environment.",
+        "valLen": "191.2",
+        "centerX": 118.85309699999999,
+        "centerY": 22.150986500000002,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "J1",
+        "segmentId": "c339c4f2-7dc2-49aa-8b85-5c157b87d68c",
+        "codeHighlow": "B",
+        "valMagTrack": "237",
+        "codePointEnd": "KAPLI",
+        "txtDesigHigh": "27000FT",
+        "codePointStart": "TNN",
+        "valReversMagTrack": "57",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4794921875,
+            0.634521484375
+          ],
+          [
+            0.453369140625,
+            0.673583984375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.675472,
+        "endY": 18.387222,
+        "startX": 120.822222,
+        "startY": 18.595528,
+        "txtRmk": "",
+        "valLen": "15.0",
+        "centerX": 120.748847,
+        "centerY": 18.491375,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "7d59db46-3c19-490f-9ec4-15104eae11d6",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "214",
+        "codePointEnd": "TADAO",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "MINIO",
+        "valReversMagTrack": "34",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            0.88330078125
+          ],
+          [
+            0.148193359375,
+            0.747314453125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 118.958639,
+        "endY": 17.993361,
+        "startX": 117.20675,
+        "startY": 16.462028,
+        "txtRmk": "",
+        "valLen": "136.0",
+        "centerX": 118.08269449999999,
+        "centerY": 17.2276945,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "83076704-a2cb-4981-b90a-7e8d40e570ed",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "50",
+        "codePointEnd": "AVMUP",
+        "codePointStart": "AKOTA",
+        "txtDesigForward": "L625",
+        "valReversMagTrack": "230",
+        "txtDesigHighForward": "15000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.33203125,
+            0.03857421875
+          ],
+          [
+            0.05029296875,
+            0.107666015625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 118.407981,
+        "endY": 21.380775,
+        "startX": 119.992222,
+        "startY": 21.741111,
+        "txtRmk": "",
+        "valLen": "91.2",
+        "centerX": 119.2001015,
+        "centerY": 21.560943,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "G86",
+        "segmentId": "4850f31d-50c7-4252-b90f-f84466c105d0",
+        "codeHighlow": "B",
+        "valMagTrack": "261",
+        "codePointEnd": "RECON",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "ANDRE",
+        "valReversMagTrack": "81",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.72998046875,
+            0.776611328125
+          ],
+          [
+            0.427490234375,
+            0.712646484375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.529056,
+        "endY": 18.178806,
+        "startX": 122.230528,
+        "startY": 17.836167,
+        "txtRmk": "",
+        "valLen": "99.0",
+        "centerX": 121.37979200000001,
+        "centerY": 18.0074865,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M501",
+        "segmentId": "74448138-427e-4c77-9cfb-23032535f22d",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "282",
+        "codePointEnd": "LAO",
+        "txtDesigHigh": "21000FT",
+        "codePointStart": "DADNU",
+        "valReversMagTrack": "102",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1,
+            0.683837890625
+          ],
+          [
+            0.926513671875,
+            0.81982421875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 123.336556,
+        "endY": 17.604611,
+        "startX": 125.266667,
+        "startY": 21,
+        "txtRmk": "A582\r\nBISIG-TELEN\n(1) RNP10 approval required from FL290 and above.FPL Item 10a: R, Item 18: PBN/A1.\n(2) Class A radar surveillance airspace. VHF radio as primary DCPC.\n(3) Class A remote airspace. CPDLC as primary DCPC. HF radio as alternative communication channel via third-party ATS unit.\n(4) Flight crew option for datalink ADS-C/CPDLC.FPL Item 10a: J, P2, Item 10b: D1, Item 18: SUR/RSP180 COM/RCP240.\n(5) Fifty (50) NM procedural longitudinal separation minima for RNP10 aircraft pair in:\na. radar surveillance airspace or,\nb. remote airspace using ADS-C/CPDLC.\n(6) Southwest bound uni-directional route from FL280 and above. For FL Series refer to ENR 1.8-6 Table 2.2.4.",
+        "valLen": "230.6",
+        "centerX": 124.3016115,
+        "centerY": 19.3023055,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "9cf080ed-8f57-4b71-a23b-6f457ea2be23",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "213",
+        "codePointEnd": "EXOMI",
+        "codePointStart": "BISIG",
+        "txtDesigForward": "A582",
+        "valReversMagTrack": "33",
+        "txtDesigHighForward": "7000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.427490234375,
+            0.712646484375
+          ],
+          [
+            0.432861328125,
+            0.743408203125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.55975,
+        "endY": 18.014083,
+        "startX": 120.529056,
+        "startY": 18.178806,
+        "txtRmk": "",
+        "valLen": "10.0",
+        "centerX": 120.54440299999999,
+        "centerY": 18.0964445,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "acfa87f2-7e7f-4a4f-ae69-d7e25c5751f1",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "170",
+        "codePointEnd": "PAYAS",
+        "txtDesigHigh": "4000FT",
+        "codePointStart": "LAO",
+        "valReversMagTrack": "350",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.432861328125,
+            0.743408203125
+          ],
+          [
+            0.443603515625,
+            0.804931640625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.620944,
+        "endY": 17.684583,
+        "startX": 120.55975,
+        "startY": 18.014083,
+        "txtRmk": "",
+        "valLen": "20.0",
+        "centerX": 120.590347,
+        "centerY": 17.849333,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "58cd90cd-7792-41fe-ae10-5e879afae58d",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "170",
+        "codePointEnd": "DIPID",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "PAYAS",
+        "valReversMagTrack": "350",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4833984375,
+            0.0029296875
+          ],
+          [
+            0.31201171875,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.88,
+        "endY": 21,
+        "startX": 120.843583,
+        "startY": 21.927778,
+        "txtRmk": "N892\r\nHCN-KABAM\nRoute Remarks:\n1. This route is for southwest bound only. The available flight levels are FL310, FL320, FL350, FL360, FL390\nand FL400.\n2. RNP 10 operations are applied above FL290. 3. Operations at or below FL280 may use HCN VOR/DME as reference.",
+        "valLen": "77.4",
+        "centerX": 120.36179150000001,
+        "centerY": 21.463889,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "dbbda78d-7e1a-463f-b483-18be967e9754",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "227",
+        "codePointEnd": "KABAM",
+        "codePointStart": "HCN",
+        "txtDesigForward": "N892",
+        "valReversMagTrack": "47",
+        "txtDesigHighForward": "5000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.31201171875,
+            0.18017578125
+          ],
+          [
+            0,
+            0.49267578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 118.10975,
+        "endY": 19.335194,
+        "startX": 119.88,
+        "startY": 21,
+        "txtRmk": "N892\r\nKABAM-MIGUG\n(1) RNP10 exclusive.FPL Item 10a: R, Item 18: PBN/A1.\n(2) Class A radar surveillance airspace. VHF radio as primary DCPC.\n(3) Class A remote airspace. CPDLC as primary DCPC. HF radio as alternative communication channel via third-party ATS unit.\n(4) Flight crew option for datalink ADS-C/CPDLC.FPL Item 10a: J, P2, Item 10b: D1, Item 18: SUR/RSP180 COM/RCP240.\n(5) 50 NM procedural longitudinal separation minima for RNP10 aircraft pair in:a.   radar surveillance airspace or,b.   remote airspace using ADS-C/CPDLC.\n(6) Southwest bound uni-directional route. For FL Series refer to ENR 1.8-6 Table 2.2.4.\n(7) MRP - ATS/MET reporting point",
+        "valLen": "141.0",
+        "centerX": 118.99487500000001,
+        "centerY": 20.167597,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "3d70df7f-8bdd-49ff-9ff7-9e182ba0f090",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "229",
+        "codePointEnd": "MIKIN",
+        "codePointStart": "KABAM",
+        "txtDesigForward": "N892",
+        "valReversMagTrack": "49",
+        "txtDesigHighForward": "15000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.487548828125,
+            0
+          ],
+          [
+            0.4833984375,
+            0.0029296875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.843583,
+        "endY": 21.927778,
+        "startX": 121.007778,
+        "startY": 22.035833,
+        "txtRmk": "",
+        "valLen": "11.2",
+        "centerX": 120.9256805,
+        "centerY": 21.9818055,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "G581",
+        "segmentId": "057cad28-e2c2-4003-aa48-1240eb763f15",
+        "codeHighlow": "B",
+        "valMagTrack": "239",
+        "codePointEnd": "HCN",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "IONIC",
+        "valReversMagTrack": "59",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.427490234375,
+            0.712646484375
+          ],
+          [
+            0.34423828125,
+            0.669921875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.060667,
+        "endY": 18.406361,
+        "startX": 120.529056,
+        "startY": 18.178806,
+        "txtRmk": "",
+        "valLen": "30.0",
+        "centerX": 120.2948615,
+        "centerY": 18.2925835,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M501",
+        "segmentId": "71e875b0-1c20-4c33-941a-39a858057d13",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "297",
+        "codePointEnd": "DEMSA",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "LAO",
+        "valReversMagTrack": "117",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.33203125,
+            0.03857421875
+          ],
+          [
+            0.31201171875,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.88,
+        "endY": 21,
+        "startX": 119.992222,
+        "startY": 21.741111,
+        "txtRmk": "",
+        "valLen": "44.8",
+        "centerX": 119.936111,
+        "centerY": 21.370555500000002,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "A577",
+        "segmentId": "56830f23-1043-4b93-abdb-2a4ec41f7736",
+        "codeHighlow": "B",
+        "valMagTrack": "193",
+        "codePointEnd": "KABAM",
+        "txtDesigHigh": "10000FT",
+        "codePointStart": "ANDRE",
+        "valReversMagTrack": "13",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.432373046875,
+            0.03076171875
+          ],
+          [
+            0.31201171875,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.88,
+        "endY": 21,
+        "startX": 120.557778,
+        "startY": 21.783056,
+        "txtRmk": "",
+        "valLen": "60.3",
+        "centerX": 120.21888899999999,
+        "centerY": 21.391528,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "f2774a7a-bdae-49a8-a2c5-b93c10089de1",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "223",
+        "codePointEnd": "KABAM",
+        "codePointStart": "ZUBAT",
+        "txtDesigForward": "Q12",
+        "valReversMagTrack": "43",
+        "txtDesigHighForward": "29000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.556884765625,
+            1
+          ],
+          [
+            0.558837890625,
+            0.989013671875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.269028,
+        "endY": 16.695778,
+        "startX": 121.024306,
+        "startY": 15.482278,
+        "txtRmk": "",
+        "valLen": "73.9",
+        "centerX": 121.146667,
+        "centerY": 16.089028,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W271",
+        "segmentId": "69a2f289-b711-4568-9b16-b0833f926c19",
+        "codeHighlow": "B",
+        "valMagTrack": "14",
+        "codePointEnd": "LAMUT",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "CAB",
+        "valReversMagTrack": "194",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.2734375,
+            0.634033203125
+          ],
+          [
+            0,
+            0.496826171875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 118.10975,
+        "endY": 19.335194,
+        "startX": 119.663611,
+        "startY": 18.597889,
+        "txtRmk": "",
+        "valLen": "99.0",
+        "centerX": 118.88668050000001,
+        "centerY": 18.966541499999998,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M501",
+        "segmentId": "6c1a947a-df64-4c78-b8fd-d4ee9bde3a94",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "300",
+        "codePointEnd": "MIKIN",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "ALDIS",
+        "valReversMagTrack": "120",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4775390625,
+            0
+          ],
+          [
+            0.4833984375,
+            0.0029296875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.843583,
+        "endY": 21.927778,
+        "startX": 120.415,
+        "startY": 22.133611,
+        "txtRmk": "",
+        "valLen": "26.9",
+        "centerX": 120.6292915,
+        "centerY": 22.0306945,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "6add22df-2ffd-41a9-b465-4b3f7059877b",
+        "codeHighlow": "B",
+        "valMagTrack": "122",
+        "codePointEnd": "HCN",
+        "codePointStart": "OPTIC",
+        "txtDesigForward": "V25",
+        "valReversMagTrack": "302",
+        "txtDesigHighForward": "6000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4833984375,
+            0.0029296875
+          ],
+          [
+            0.46240234375,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.036389,
+        "endY": 22.032222,
+        "startX": 120.843583,
+        "startY": 21.927778,
+        "txtRmk": "",
+        "valLen": "45.5",
+        "centerX": 120.43998600000002,
+        "centerY": 21.98,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "G581",
+        "segmentId": "813280c5-da08-423e-bcec-d1041c38437c",
+        "codeHighlow": "B",
+        "valMagTrack": "282",
+        "codePointEnd": "PARPA",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "HCN",
+        "valReversMagTrack": "102",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.442626953125,
+            0.073486328125
+          ],
+          [
+            0.31201171875,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.88,
+        "endY": 21,
+        "startX": 120.615278,
+        "startY": 21.559722,
+        "txtRmk": "",
+        "valLen": "53.1",
+        "centerX": 120.24763899999999,
+        "centerY": 21.279861,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "3bfc42b3-f9f9-4c40-a294-b634c1f55466",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "236",
+        "codePointEnd": "KABAM",
+        "codePointStart": "GLOOM",
+        "txtDesigForward": "Q13",
+        "valReversMagTrack": "56",
+        "txtDesigHighForward": "29000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.44873046875,
+            0.7353515625
+          ],
+          [
+            0.491455078125,
+            0.781005859375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.88875,
+        "endY": 17.813389,
+        "startX": 120.649139,
+        "startY": 18.057083,
+        "txtRmk": "",
+        "valLen": "20.0",
+        "centerX": 120.7689445,
+        "centerY": 17.935236,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W2",
+        "segmentId": "ccff2c7f-e750-4b31-b5e1-0dc7850346fd",
+        "codeHighlow": "B",
+        "valMagTrack": "137",
+        "codePointEnd": "PAMKI",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "LEMAP",
+        "valReversMagTrack": "317",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.45751953125,
+            0
+          ],
+          [
+            0.432373046875,
+            0.03076171875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.557778,
+        "endY": 21.783056,
+        "startX": 121.376558,
+        "startY": 22.713683,
+        "txtRmk": "",
+        "valLen": "71.9",
+        "centerX": 120.96716800000002,
+        "centerY": 22.2483695,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "d9040f83-0514-4c2e-8cc0-86be6ac31e42",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "223",
+        "codePointEnd": "ZUBAT",
+        "codePointStart": "YANMA",
+        "txtDesigForward": "Q12",
+        "valReversMagTrack": "43",
+        "txtDesigHighForward": "29000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.558837890625,
+            0.989013671875
+          ],
+          [
+            0.580810546875,
+            0.876953125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.391944,
+        "endY": 17.298611,
+        "startX": 121.269028,
+        "startY": 16.695778,
+        "txtRmk": "",
+        "valLen": "36.7",
+        "centerX": 121.33048600000001,
+        "centerY": 16.9971945,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W271",
+        "segmentId": "d660e9f2-2664-4dd7-b62e-b1fd9f5e486d",
+        "codeHighlow": "B",
+        "valMagTrack": "14",
+        "codePointEnd": "DYERA",
+        "txtDesigHigh": "11000FT",
+        "codePointStart": "LAMUT",
+        "valReversMagTrack": "194",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.48193359375,
+            0
+          ],
+          [
+            0.4833984375,
+            0.0029296875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.843583,
+        "endY": 21.927778,
+        "startX": 120.365833,
+        "startY": 22.835556,
+        "txtRmk": "",
+        "valLen": "60.4",
+        "centerX": 120.60470799999999,
+        "centerY": 22.381667,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W4",
+        "segmentId": "f815292a-1fde-4d0d-ad90-51e5dc034e30",
+        "codeHighlow": "B",
+        "valMagTrack": "158",
+        "codePointEnd": "HCN",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "ARLEN",
+        "valReversMagTrack": "338",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.443603515625,
+            0.804931640625
+          ],
+          [
+            0.457275390625,
+            0.8818359375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.696556,
+        "endY": 17.272583,
+        "startX": 120.620944,
+        "startY": 17.684583,
+        "txtRmk": "",
+        "valLen": "25.0",
+        "centerX": 120.65875,
+        "centerY": 17.478583,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "3bdb4ade-cada-4021-8960-100b275abfdb",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "170",
+        "codePointEnd": "ESSYL",
+        "txtDesigHigh": "13000FT",
+        "codePointStart": "DIPID",
+        "valReversMagTrack": "350",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            0.60888671875
+          ],
+          [
+            0.148193359375,
+            0.747314453125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 118.958639,
+        "endY": 17.993361,
+        "startX": 117.789722,
+        "startY": 19.028583,
+        "txtRmk": "",
+        "valLen": "91.0",
+        "centerX": 118.3741805,
+        "centerY": 18.510972000000002,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "A461",
+        "segmentId": "a1a006fb-cce4-49c2-98e6-7a35cb1b1bfe",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "136",
+        "codePointEnd": "AVMUP",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "MUMOT",
+        "valReversMagTrack": "316",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.408203125,
+            0.88330078125
+          ],
+          [
+            0.39697265625,
+            0.98291015625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.358056,
+        "endY": 16.728333,
+        "startX": 120.420972,
+        "startY": 17.264333,
+        "txtRmk": "",
+        "valLen": "32.0",
+        "centerX": 120.389514,
+        "centerY": 16.996333,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "d0184bc4-bcc0-4a68-ae57-70461cf1b4b9",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "189",
+        "codePointEnd": "SANRO",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "MELAN",
+        "valReversMagTrack": "9",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4404296875,
+            0.54052734375
+          ],
+          [
+            0.4345703125,
+            0.618896484375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.569167,
+        "endY": 18.679306,
+        "startX": 120.60275,
+        "startY": 19.096361,
+        "txtRmk": "",
+        "valLen": "25.0",
+        "centerX": 120.5859585,
+        "centerY": 18.8878335,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "fb8f3890-6b1c-4484-a49d-404ac4eef315",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "184",
+        "codePointEnd": "KAPOH",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "CHRIS",
+        "valReversMagTrack": "4",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.423828125,
+            0.74365234375
+          ],
+          [
+            0.4169921875,
+            0.8056640625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.469972,
+        "endY": 17.680028,
+        "startX": 120.509333,
+        "startY": 18.012556,
+        "txtRmk": "",
+        "valLen": "20.0",
+        "centerX": 120.48965249999999,
+        "centerY": 17.846292,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "73fef7c7-08cb-46eb-9c00-7b41ffecac0b",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "186",
+        "codePointEnd": "KINLA",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "CURIM",
+        "valReversMagTrack": "6",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.427490234375,
+            0.712646484375
+          ],
+          [
+            0.423828125,
+            0.74365234375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.509333,
+        "endY": 18.012556,
+        "startX": 120.529056,
+        "startY": 18.178806,
+        "txtRmk": "",
+        "valLen": "10.0",
+        "centerX": 120.5191945,
+        "centerY": 18.095681,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "5713b658-a22c-4cc8-862e-89fde7a08ca1",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "186",
+        "codePointEnd": "CURIM",
+        "txtDesigHigh": "4000FT",
+        "codePointStart": "LAO",
+        "valReversMagTrack": "6",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4345703125,
+            0.618896484375
+          ],
+          [
+            0.427490234375,
+            0.712646484375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.529056,
+        "endY": 18.178806,
+        "startX": 120.569167,
+        "startY": 18.679306,
+        "txtRmk": "",
+        "valLen": "30.0",
+        "centerX": 120.5491115,
+        "centerY": 18.429056000000003,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "43d93d1c-b9f7-4385-87ad-2afae3f46561",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "184",
+        "codePointEnd": "LAO",
+        "txtDesigHigh": "4000FT",
+        "codePointStart": "KAPOH",
+        "valReversMagTrack": "4",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.425048828125,
+            0
+          ],
+          [
+            0.432373046875,
+            0.03076171875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.557778,
+        "endY": 21.783056,
+        "startX": 120.291356,
+        "startY": 22.810267,
+        "txtRmk": "",
+        "valLen": "63.2",
+        "centerX": 120.424567,
+        "centerY": 22.2966615,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "Q14",
+        "segmentId": "5bc0a646-68f0-41c1-a78a-3f6cd0ae29ab",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "170",
+        "codePointEnd": "ZUBAT",
+        "txtDesigHigh": "29000FT",
+        "codePointStart": "ABSOL",
+        "valReversMagTrack": "350",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.33740234375,
+            0
+          ],
+          [
+            0.33203125,
+            0.03857421875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.992222,
+        "endY": 21.741111,
+        "startX": 120.036389,
+        "startY": 22.032222,
+        "txtRmk": "",
+        "valLen": "17.6",
+        "centerX": 120.0143055,
+        "centerY": 21.8866665,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "A577",
+        "segmentId": "c501f397-cab1-4d26-9cc6-961972583017",
+        "codeHighlow": "B",
+        "valMagTrack": "193",
+        "codePointEnd": "ANDRE",
+        "txtDesigHigh": "8000FT",
+        "codePointStart": "PARPA",
+        "valReversMagTrack": "13",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.453369140625,
+            0.673583984375
+          ],
+          [
+            0.427490234375,
+            0.712646484375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.529056,
+        "endY": 18.178806,
+        "startX": 120.675472,
+        "startY": 18.387222,
+        "txtRmk": "",
+        "valLen": "15.0",
+        "centerX": 120.60226399999999,
+        "centerY": 18.283014,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "6124b7cf-7e19-48ee-b60c-4514344e392d",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "214",
+        "codePointEnd": "LAO",
+        "txtDesigHigh": "4000FT",
+        "codePointStart": "TADAO",
+        "valReversMagTrack": "34",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4833984375,
+            0.0029296875
+          ],
+          [
+            0.46826171875,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.758333,
+        "endY": 21,
+        "startX": 120.843583,
+        "startY": 21.927778,
+        "txtRmk": "M646\r\nHCN-POTIB\nRoute Remarks: Flight levels available in Taipei FIR RVSM airspace:\na. Southbound: FL300, FL340, FL380\nb. Northbound: FL290, FL310, FL330, FL350, FL370, FL390, FL410",
+        "valLen": "55.7",
+        "centerX": 120.800958,
+        "centerY": 21.463889,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "520f66d4-d0e3-4d8f-9f21-2d2f675321b1",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "188",
+        "codePointEnd": "POTIB",
+        "txtDesigHigh": "5000FT",
+        "codePointStart": "HCN",
+        "valReversMagTrack": "8",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.64404296875,
+            0.945068359375
+          ],
+          [
+            0.617919921875,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.024306,
+        "endY": 15.482278,
+        "startX": 121.748083,
+        "startY": 16.931611,
+        "txtRmk": "",
+        "valLen": "96.2",
+        "centerX": 121.38619449999999,
+        "centerY": 16.2069445,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W1",
+        "segmentId": "5e5f8236-162b-4287-a2f6-eb81189fe855",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "209",
+        "codePointEnd": "CAB",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "CUY",
+        "txtDesigBackward": "N884",
+        "valReversMagTrack": "29",
+        "txtDesigHighBackward": "21000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.580810546875,
+            0.876953125
+          ],
+          [
+            0.64404296875,
+            0.945068359375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.748083,
+        "endY": 16.931611,
+        "startX": 121.391944,
+        "startY": 17.298611,
+        "txtRmk": "",
+        "valLen": "30.0",
+        "centerX": 121.57001349999999,
+        "centerY": 17.115111,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W2",
+        "segmentId": "22eb2946-2ff6-4770-9bac-7475913f3779",
+        "codeHighlow": "B",
+        "valMagTrack": "140",
+        "codePointEnd": "CUY",
+        "txtDesigHigh": "11000FT",
+        "codePointStart": "DYERA",
+        "valReversMagTrack": "320",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.432373046875,
+            0.03076171875
+          ],
+          [
+            0.442626953125,
+            0.073486328125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.615278,
+        "endY": 21.559722,
+        "startX": 120.557778,
+        "startY": 21.783056,
+        "txtRmk": "",
+        "valLen": "13.7",
+        "centerX": 120.586528,
+        "centerY": 21.671388999999998,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "Q14",
+        "segmentId": "a2d7bf71-889e-4835-a39d-fd910a0b2074",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "170",
+        "codePointEnd": "GLOOM",
+        "txtDesigHigh": "29000FT",
+        "codePointStart": "ZUBAT",
+        "valReversMagTrack": "350",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4833984375,
+            0.0029296875
+          ],
+          [
+            0.33203125,
+            0.03857421875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.992222,
+        "endY": 21.741111,
+        "startX": 120.843583,
+        "startY": 21.927778,
+        "txtRmk": "G86\r\nHCN-KAPLI\nRoute Remarks:\n1. Flight levels available in Taipei FIR RVSM airspace:\n\n\n a. Northeast bound: FL290, FL330, FL370, FL390, FL410\n\n\n b. Southwest bound: FL300, FL340, FL380, FL400\n2. Eastbound traffic entering the Taipei FIR via KAPLI shall be restricted to flights destined for aerodromes in Taipei FIR or transiting from Taipei FIR to Fukuoka FIR via IGURU between 1700-2200UTC.",
+        "valLen": "48.8",
+        "centerX": 120.4179025,
+        "centerY": 21.8344445,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "G86",
+        "segmentId": "ff371b97-b9d9-4086-b1c2-a83b3607d8fc",
+        "codeHighlow": "B",
+        "valMagTrack": "261",
+        "codePointEnd": "ANDRE",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "HCN",
+        "valReversMagTrack": "81",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.34423828125,
+            0.669921875
+          ],
+          [
+            0.2734375,
+            0.634033203125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 119.663611,
+        "endY": 18.597889,
+        "startX": 120.060667,
+        "startY": 18.406361,
+        "txtRmk": "",
+        "valLen": "25.0",
+        "centerX": 119.862139,
+        "centerY": 18.502125,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M501",
+        "segmentId": "8c8811d5-c253-4353-8899-cd5c40b6ab3b",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "297",
+        "codePointEnd": "ALDIS",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "DEMSA",
+        "valReversMagTrack": "117",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.05029296875,
+            0.107666015625
+          ],
+          [
+            0,
+            0.120361328125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 117.5,
+        "endY": 21.166667,
+        "startX": 118.407981,
+        "startY": 21.380775,
+        "txtRmk": "",
+        "valLen": "52.5",
+        "centerX": 117.9539905,
+        "centerY": 21.273721000000002,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "G86",
+        "segmentId": "c1aa0bef-275f-486a-a424-b4acad1a23af",
+        "codeHighlow": "B",
+        "valMagTrack": "260",
+        "codePointEnd": "KAPLI",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "RECON",
+        "valReversMagTrack": "80",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.427490234375,
+            0.712646484375
+          ],
+          [
+            0.44873046875,
+            0.7353515625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.649139,
+        "endY": 18.057083,
+        "startX": 120.529056,
+        "startY": 18.178806,
+        "txtRmk": "",
+        "valLen": "10.0",
+        "centerX": 120.58909750000001,
+        "centerY": 18.1179445,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W2",
+        "segmentId": "f4c66c0f-97fd-400c-bed4-221136fa0ee9",
+        "codeHighlow": "B",
+        "valMagTrack": "137",
+        "codePointEnd": "LEMAP",
+        "txtDesigHigh": "4000FT",
+        "codePointStart": "LAO",
+        "valReversMagTrack": "317",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1,
+            0.237060546875
+          ],
+          [
+            0.72998046875,
+            0.776611328125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 122.230528,
+        "endY": 17.836167,
+        "startX": 123.908333,
+        "startY": 21,
+        "txtRmk": "",
+        "valLen": "212.0",
+        "centerX": 123.06943050000001,
+        "centerY": 19.4180835,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "5f81eefe-d0ef-4db4-9f7c-11aec4d8e75f",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "209",
+        "codePointEnd": "DADNU",
+        "codePointStart": "LEBIX",
+        "txtDesigBackward": "N884",
+        "valReversMagTrack": "29",
+        "txtDesigHighBackward": "21000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4833984375,
+            0.0029296875
+          ],
+          [
+            0.498291015625,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.186667,
+        "endY": 21.989444,
+        "startX": 120.843583,
+        "startY": 21.927778,
+        "txtRmk": "",
+        "valLen": "19.5",
+        "centerX": 121.01512499999998,
+        "centerY": 21.958610999999998,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "J7",
+        "segmentId": "2d0737e1-81d4-4f16-99f3-da0e92b57c44",
+        "codeHighlow": "B",
+        "valMagTrack": "83",
+        "codePointEnd": "PICHU",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "HCN",
+        "valReversMagTrack": "263",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.78662109375,
+            0.18017578125
+          ],
+          [
+            0.4794921875,
+            0.634521484375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.822222,
+        "endY": 18.595528,
+        "startX": 122.55,
+        "startY": 21,
+        "txtRmk": "B462\r\nMEVI-BIDOR:\n1) RNP10 approval required from FL290 and above.\nFPL Item 10a: R, Item 18: PBN/A1.\n(2) RNP10 exclusive.\nFPL Item 10a: R, Item 18: PBN/A1.\n(3) Class A radar surveillance airspace. VHF radio as primary DCPC.\n(4) Class A remote airspace. CPDLC as primary DCPC. HF radio as alternative\ncommunication channel via third-party ATS unit.\n(5) Flight crew option for datalink ADS-C/CPDLC.\nFPL Item 10a: J, P2, Item 10b: D1, Item 18: SUR/RSP180 COM/RCP240.\n(6) 50 NM procedural longitudinal separation minima for RNP10 aircraft pair in:\na. radar surveillance airspace or,\nb. remote airspace using ADS-C/CPDLC.",
+        "valLen": "174.0",
+        "centerX": 121.68611100000001,
+        "centerY": 19.797764,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "45c2dfc4-ee76-487c-a747-49320d53218b",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "219",
+        "codePointEnd": "MINIO",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "MEVIN",
+        "valReversMagTrack": "39",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.926513671875,
+            0.81982421875
+          ],
+          [
+            0.83154296875,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 122.678667,
+        "endY": 16.411444,
+        "startX": 123.336556,
+        "startY": 17.604611,
+        "txtRmk": "",
+        "valLen": "80.7",
+        "centerX": 123.0076115,
+        "centerY": 17.008027499999997,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "42b5d171-4546-43ed-9223-a6475b950776",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "211",
+        "codePointEnd": "PIBEM",
+        "codePointStart": "EXOMI",
+        "txtDesigForward": "A582",
+        "valReversMagTrack": "31",
+        "txtDesigHighForward": "7000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.457275390625,
+            0.8818359375
+          ],
+          [
+            0.477783203125,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.024306,
+        "endY": 15.482278,
+        "startX": 120.696556,
+        "startY": 17.272583,
+        "txtRmk": "",
+        "valLen": "108.6",
+        "centerX": 120.860431,
+        "centerY": 16.377430500000003,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "74064b26-3c70-4a0d-98bd-8d752dc0a230",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "173",
+        "codePointEnd": "CAB",
+        "txtDesigHigh": "13000FT",
+        "codePointStart": "ESSYL",
+        "valReversMagTrack": "353",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.90478515625,
+            0
+          ],
+          [
+            0.78662109375,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 122.55,
+        "endY": 21,
+        "startX": 123.816819,
+        "startY": 22.797553,
+        "txtRmk": "",
+        "valLen": "129.0",
+        "centerX": 123.1834095,
+        "centerY": 21.8987765,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B462",
+        "segmentId": "b253b2a2-42a4-44f3-b2e2-cfa075690aa3",
+        "codeHighlow": "B",
+        "valMagTrack": "216",
+        "codePointEnd": "MEVIN",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "MAGMA",
+        "valReversMagTrack": "36",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.485595703125,
+            0
+          ],
+          [
+            0.4833984375,
+            0.0029296875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.843583,
+        "endY": 21.927778,
+        "startX": 120.958333,
+        "startY": 22.061667,
+        "txtRmk": "",
+        "valLen": "10.3",
+        "centerX": 120.90095799999999,
+        "centerY": 21.9947225,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B591",
+        "segmentId": "817fee98-1239-431c-8524-2d330c6fda90",
+        "codeHighlow": "B",
+        "valMagTrack": "223",
+        "codePointEnd": "HCN",
+        "txtDesigHigh": "6000FT",
+        "codePointStart": "BUSBY",
+        "valReversMagTrack": "43",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.72998046875,
+            0.776611328125
+          ],
+          [
+            0.64404296875,
+            0.945068359375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.748083,
+        "endY": 16.931611,
+        "startX": 122.230528,
+        "startY": 17.836167,
+        "txtRmk": "N884\r\nLAXOR-LEBIX\n(1) RNP10 exclusive.FPL Item 10a: R, Item 18: PBN/A1.\n(2) Class A radar surveillance airspace. VHF radio as primary DCPC.\n(3) Flight crew option for datalink ADS-C/CPDLC.FPL Item 10a: J, P2, Item 10b: D1, Item 18: SUR/RSP180 COM/RCP240.\n(4) 50 NM procedural longitudinal separation minima for RNP10 aircraft pair in:a.   radar surveillance airspace or,b.   remote airspace using ADS-C/CPDLC.\n(5) 30 NM procedural longitudinal separation minima for RNP4-approved and ADS-C/CPDLC connected aircraft pair.FPL Item 10a: R, J, P2, Item 10b: D1, Item 18: PBN/L1 SUR/RSP180 COM/RCP240.\n(6) Northeast bound uni-directional route. For FL Series refer to ENR 1.8-6 Table 2.2.4.\n(7) MRP - ATS/MET reporting point.",
+        "valLen": "61.0",
+        "centerX": 121.9893055,
+        "centerY": 17.383889,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "8d208fd5-905e-4cb0-988a-5407d332811c",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "209",
+        "codePointEnd": "CUY",
+        "codePointStart": "DADNU",
+        "txtDesigBackward": "N884",
+        "valReversMagTrack": "29",
+        "txtDesigHighBackward": "21000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.445068359375,
+            0.480712890625
+          ],
+          [
+            0.78662109375,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 122.55,
+        "endY": 21,
+        "startX": 120.628472,
+        "startY": 19.414111,
+        "txtRmk": "",
+        "valLen": "144.0",
+        "centerX": 121.58923599999999,
+        "centerY": 20.2070555,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "segmentId": "9e83ce52-88d5-436d-878e-584ebe59f382",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "52",
+        "codePointEnd": "MEVIN",
+        "codePointStart": "ABVAR",
+        "txtDesigForward": "L625",
+        "valReversMagTrack": "232",
+        "txtDesigHighForward": "15000FT",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.540771484375,
+            0
+          ],
+          [
+            0.46826171875,
+            0.18017578125
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.758333,
+        "endY": 21,
+        "startX": 121.186667,
+        "startY": 21.989444,
+        "txtRmk": "",
+        "valLen": "63.8",
+        "centerX": 120.97250000000001,
+        "centerY": 21.494722,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "Q11",
+        "segmentId": "5f186556-9267-4772-a5ea-cdc816e5470a",
+        "codeHighlow": "B",
+        "txtDesigRnp": "R2",
+        "valMagTrack": "205",
+        "codePointEnd": "POTIB",
+        "txtDesigHigh": "29000FT",
+        "codePointStart": "PICHU",
+        "valReversMagTrack": "25",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.39697265625,
+            0.98291015625
+          ],
+          [
+            0.395751953125,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.286194,
+        "endY": 15.674278,
+        "startX": 120.358056,
+        "startY": 16.728333,
+        "txtRmk": "",
+        "valLen": "63.1",
+        "centerX": 120.322125,
+        "centerY": 16.2013055,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "B591",
+        "segmentId": "4de58671-b848-4e68-bf26-07da6467a7cf",
+        "codeHighlow": "B",
+        "valMagTrack": "187",
+        "codePointEnd": "TATIL",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "SANRO",
+        "valReversMagTrack": "7",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.39697265625,
+            0.98291015625
+          ],
+          [
+            0.40576171875,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 121.024306,
+        "endY": 15.482278,
+        "startX": 120.358056,
+        "startY": 16.728333,
+        "txtRmk": "",
+        "valLen": "84.0",
+        "centerX": 120.691181,
+        "centerY": 16.1053055,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "A461",
+        "segmentId": "c7577f68-730f-4259-a3f8-14cef9f06558",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "156",
+        "codePointEnd": "CAB",
+        "txtDesigHigh": "10000FT",
+        "codePointStart": "SANRO",
+        "valReversMagTrack": "336",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.46826171875,
+            0.18017578125
+          ],
+          [
+            0.445068359375,
+            0.480712890625
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.628472,
+        "endY": 19.414111,
+        "startX": 120.758333,
+        "startY": 21,
+        "txtRmk": "M646\r\nPOTIB-OSANU：\n1) RNP10 approval required from FL290 and above.\nFPL Item 10a: R, Item 18: PBN/A1.\n(2) Class A radar surveillance airspace. VHF radio as primary DCPC.\n(3) Flight crew option for datalink ADS-C/CPDLC.\nFPL Item 10a: J, P2, Item 10b: D1, Item 18: SUR/RSP180 COM/RCP240.\n(4) 50 NM procedural longitudinal separation minima for RNP10 aircraft pair in:\na. radar surveillance airspace or,\nb. remote airspace using ADS-C/CPDLC.\n(5) For FL Series refer to ENR 1.8-6 Table 2.2.4",
+        "valLen": "95.0",
+        "centerX": 120.6934025,
+        "centerY": 20.2070555,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "fca1713b-552b-4e4b-b0e2-70314838e22e",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "188",
+        "codePointEnd": "ABVAR",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "POTIB",
+        "valReversMagTrack": "8",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.4833984375,
+            0.0029296875
+          ],
+          [
+            0.4912109375,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 123.251667,
+        "endY": 22.765,
+        "startX": 120.843583,
+        "startY": 21.927778,
+        "txtRmk": "J5\r\n1. Available from 1100UTC to 2300UTC daily and the clearance may be withdrawn in case of military opera-tion requirement.",
+        "valLen": "143.0",
+        "centerX": 122.04762499999998,
+        "centerY": 22.346389000000002,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "J5",
+        "segmentId": "082aa7f7-b7ef-4c19-b78e-458002a596fa",
+        "codeHighlow": "B",
+        "valMagTrack": "73",
+        "codePointEnd": "GUMBO",
+        "txtDesigHigh": "27000FT",
+        "codePointStart": "HCN",
+        "valReversMagTrack": "253",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1,
+            0.83642578125
+          ],
+          [
+            0.926513671875,
+            0.81982421875
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 123.336556,
+        "endY": 17.604611,
+        "startX": 124.426833,
+        "startY": 17.369778,
+        "txtRmk": "",
+        "valLen": "64.1",
+        "centerX": 123.88169450000001,
+        "centerY": 17.4871945,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M501",
+        "segmentId": "9760fbd2-faab-45d2-a6fa-0828f683ac79",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "285",
+        "codePointEnd": "EXOMI",
+        "txtDesigHigh": "21000FT",
+        "codePointStart": "VIGOR",
+        "valReversMagTrack": "105",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.148193359375,
+            0.747314453125
+          ],
+          [
+            0.286376953125,
+            1
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.286194,
+        "endY": 15.674278,
+        "startX": 118.958639,
+        "startY": 17.993361,
+        "txtRmk": "W16\r\n(1) RNP10 approval required.FPL Item 10a: R, Item 18: PBN/A1.\n(2) Class A radar surveillance airspace. VHF radio as primary DCPC.\n(3) Flight crew option for datalink ADS-C/CPDLC.FPL Item 10a: J, P2, Item 10b: D1, Item 18: SUR/RSP180 COM/RCP240.\n(4) 50 NM procedural longitudinal separation minima for RNP10 aircraft pair.\n(5) 30 NM procedural longitudinal separation minima for RNP4-approved and ADS-C/CPDLC connected aircraft pair.\nFPL item 10a: R, J, P2, Item 10b: D1, Item 18: PBN/L1 SUR/RSP180 COM/RCP240.",
+        "valLen": "158.0",
+        "centerX": 119.62241650000001,
+        "centerY": 16.8338195,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "W16",
+        "segmentId": "e72a7ec0-ba05-470c-9d73-647ea4115828",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "154",
+        "codePointEnd": "TATIL",
+        "txtDesigHigh": "9000FT",
+        "codePointStart": "AVMUP",
+        "valReversMagTrack": "334",
+        "layerName": "segment_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.445068359375,
+            0.480712890625
+          ],
+          [
+            0.4404296875,
+            0.54052734375
+          ]
+        ]
+      },
+      "properties": {
+        "endX": 120.60275,
+        "endY": 19.096361,
+        "startX": 120.628472,
+        "startY": 19.414111,
+        "txtRmk": "",
+        "valLen": "19.0",
+        "centerX": 120.615611,
+        "centerY": 19.255236,
+        "spaceId": "segment",
+        "uomDist": "NM",
+        "txtDesig": "M646",
+        "segmentId": "4779a970-a919-4a63-b955-142b17b959f0",
+        "codeHighlow": "B",
+        "txtDesigRnp": "P10",
+        "valMagTrack": "187",
+        "codePointEnd": "CHRIS",
+        "txtDesigHigh": "7000FT",
+        "codePointStart": "ABVAR",
+        "valReversMagTrack": "7",
+        "layerName": "segment_202507"
+      }
+    }
+  ],
+  "designated_point": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.148193359375,
+          0.747314453125
+        ]
+      },
+      "properties": {
+        "codeId": "AVMUP",
+        "geoLat": "N17593610",
+        "codeFir": "RPHI",
+        "geoLong": "E118573110",
+        "spaceId": "designated_point",
+        "txtName": "AVMUP",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "e99b9543-beaf-4a28-b5b2-3efe288664cd",
+        "valMagVar": "-3",
+        "codeInAirway": "Y",
+        "significantPointId": "dfa03cbc-007c-4b18-885a-4843cb582e23",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2734375,
+          0.634033203125
+        ]
+      },
+      "properties": {
+        "codeId": "ALDIS",
+        "geoLat": "N18355240",
+        "codeFir": "RPHI",
+        "geoLong": "E119394900",
+        "spaceId": "designated_point",
+        "txtName": "ALDIS",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "868703f3-aa6e-4416-b0e5-cdfbe069ecac",
+        "valMagVar": "-3.2",
+        "codeInAirway": "Y",
+        "significantPointId": "3413d047-2ec6-4f7c-a9f0-f9614ad3b5e3",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.445068359375,
+          0.480712890625
+        ]
+      },
+      "properties": {
+        "codeId": "ABVAR",
+        "geoLat": "N19245080",
+        "codeFir": "RPHI",
+        "geoLong": "E120374250",
+        "spaceId": "designated_point",
+        "txtName": "ABVAR",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "2786cf9c-6d74-466b-a12c-40ecdad3aae3",
+        "valMagVar": "-3.5",
+        "codeInAirway": "Y",
+        "significantPointId": "3b126593-fd1c-4844-83b6-3797cfb65e48",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.558837890625,
+          0.989013671875
+        ]
+      },
+      "properties": {
+        "codeId": "LAMUT",
+        "geoLat": "N16414480",
+        "codeFir": "RPHI",
+        "geoLong": "E121160850",
+        "spaceId": "designated_point",
+        "txtName": "LAMUT",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "def290ee-5995-4ab0-b712-06ce84417856",
+        "valMagVar": "-3",
+        "codeInAirway": "Y",
+        "significantPointId": "54b121a8-d311-49d7-9e3f-3b4b780e7b63",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.408203125,
+          0.88330078125
+        ]
+      },
+      "properties": {
+        "codeId": "MELAN",
+        "geoLat": "N17155160",
+        "codeFir": "RPHI",
+        "geoLong": "E120251550",
+        "spaceId": "designated_point",
+        "txtName": "MELAN",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "840f6f26-deb5-4eba-8c5f-7ce3e8c54ed8",
+        "valMagVar": "-3",
+        "codeInAirway": "Y",
+        "significantPointId": "f3ed0a59-05dc-4a7c-a2a9-2fedc6bfd937",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4794921875,
+          0.634521484375
+        ]
+      },
+      "properties": {
+        "codeId": "MINIO",
+        "geoLat": "N18354390",
+        "codeFir": "RPHI",
+        "geoLong": "E120492000",
+        "spaceId": "designated_point",
+        "txtName": "MINIO",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "964d3ca6-21af-4111-b80f-858a4423b4cb",
+        "valMagVar": "-3.3",
+        "codeInAirway": "Y",
+        "significantPointId": "7867ca02-f3ba-4a47-a5de-8185ecb6fe22",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.491455078125,
+          0.781005859375
+        ]
+      },
+      "properties": {
+        "codeId": "PAMKI",
+        "geoLat": "N17484820",
+        "codeFir": "RPHI",
+        "geoLong": "E120531950",
+        "spaceId": "designated_point",
+        "txtName": "PAMKI",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "fba0dfc2-9393-453e-ab2b-ea9613351b1a",
+        "valMagVar": "-3.2",
+        "codeInAirway": "Y",
+        "significantPointId": "4a09f8ff-94fa-438d-b67e-6910ac830f17",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.432861328125,
+          0.743408203125
+        ]
+      },
+      "properties": {
+        "codeId": "PAYAS",
+        "geoLat": "N18005070",
+        "codeFir": "RPHI",
+        "geoLong": "E120333510",
+        "spaceId": "designated_point",
+        "txtName": "PAYAS",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "1735195e-7fdb-4c05-a055-158746238782",
+        "valMagVar": "-3.2",
+        "codeInAirway": "Y",
+        "significantPointId": "a3087705-7a12-4b0d-be5a-3e09e8336688",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4169921875,
+          0.8056640625
+        ]
+      },
+      "properties": {
+        "codeId": "KINLA",
+        "geoLat": "N17404810",
+        "codeFir": "RPHI",
+        "geoLong": "E120281190",
+        "spaceId": "designated_point",
+        "txtName": "KINLA",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "d172351d-10a9-411e-8999-3753c32f6c40",
+        "valMagVar": "-3.1",
+        "codeInAirway": "Y",
+        "significantPointId": "029e3aa6-7af5-467c-8df0-e22c85f99832",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4345703125,
+          0.618896484375
+        ]
+      },
+      "properties": {
+        "codeId": "KAPOH",
+        "geoLat": "N18404550",
+        "codeFir": "RPHI",
+        "geoLong": "E120340900",
+        "spaceId": "designated_point",
+        "txtName": "KAPOH",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "84468eb1-8fe7-4128-8224-c500b7097747",
+        "valMagVar": "-3.3",
+        "codeInAirway": "Y",
+        "significantPointId": "befd3df8-4286-4301-929c-a7e481e3a0f7",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.44873046875,
+          0.7353515625
+        ]
+      },
+      "properties": {
+        "codeId": "LEMAP",
+        "geoLat": "N18032550",
+        "codeFir": "RPHI",
+        "geoLong": "E120385690",
+        "spaceId": "designated_point",
+        "txtName": "LEMAP",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "707150e7-43d6-42a8-acc1-1c45cda948f3",
+        "valMagVar": "-3.2",
+        "codeInAirway": "Y",
+        "significantPointId": "5c8629c0-ae27-4443-a4d9-56e011bf9fe7",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.423828125,
+          0.74365234375
+        ]
+      },
+      "properties": {
+        "codeId": "CURIM",
+        "geoLat": "N18004520",
+        "codeFir": "RPHI",
+        "geoLong": "E120303360",
+        "spaceId": "designated_point",
+        "txtName": "CURIM",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "ce624632-e250-4cb9-a35b-b397db966367",
+        "valMagVar": "-3.2",
+        "codeInAirway": "Y",
+        "significantPointId": "a456b3b4-4cea-4a6f-ac76-43275502c180",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.457275390625,
+          0.8818359375
+        ]
+      },
+      "properties": {
+        "codeId": "ESSYL",
+        "geoLat": "N17162130",
+        "codeFir": "RPHI",
+        "geoLong": "E120414760",
+        "spaceId": "designated_point",
+        "txtName": "ESSYL",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "2788406a-5c34-4892-9c8d-66e8c8ca0650",
+        "valMagVar": "-3",
+        "codeInAirway": "Y",
+        "significantPointId": "24584948-d8c4-4286-a858-0835740ae93b",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.926513671875,
+          0.81982421875
+        ]
+      },
+      "properties": {
+        "codeId": "EXOMI",
+        "geoLat": "N17361660",
+        "codeFir": "RPHI",
+        "geoLong": "E123201160",
+        "spaceId": "designated_point",
+        "txtName": "EXOMI",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "8d59594c-e729-42db-9c0b-78d673b34590",
+        "valMagVar": "-3.3",
+        "codeInAirway": "Y",
+        "significantPointId": "d7b40f51-29d1-478f-8794-1904f29210dc",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.453369140625,
+          0.673583984375
+        ]
+      },
+      "properties": {
+        "codeId": "TADAO",
+        "geoLat": "N18231400",
+        "codeFir": "RPHI",
+        "geoLong": "E120403170",
+        "spaceId": "designated_point",
+        "txtName": "TADAO",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "762ecd5f-ee82-4ae0-bfc3-fc26de204082",
+        "valMagVar": "-3.3",
+        "codeInAirway": "Y",
+        "significantPointId": "095c638f-da54-48d6-9f07-b80cdddf57e7",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.443603515625,
+          0.804931640625
+        ]
+      },
+      "properties": {
+        "codeId": "DIPID",
+        "geoLat": "N17410450",
+        "codeFir": "RPHI",
+        "geoLong": "E120371540",
+        "spaceId": "designated_point",
+        "txtName": "DIPID",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "ded5b0bc-c958-45d7-96b0-a409a16d34f1",
+        "valMagVar": "-3.1",
+        "codeInAirway": "Y",
+        "significantPointId": "63c7ec16-7f17-44e2-8f28-446b4f3e4895",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.580810546875,
+          0.876953125
+        ]
+      },
+      "properties": {
+        "codeId": "DYERA",
+        "geoLat": "N17175500",
+        "codeFir": "RPHI",
+        "geoLong": "E121233100",
+        "spaceId": "designated_point",
+        "txtName": "DYERA",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "9cb304c1-811b-4653-b016-88214d875b89",
+        "valMagVar": "-3.1",
+        "codeInAirway": "Y",
+        "significantPointId": "05e27936-0f99-40f4-b096-813313a87222",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.34423828125,
+          0.669921875
+        ]
+      },
+      "properties": {
+        "codeId": "DEMSA",
+        "geoLat": "N18242290",
+        "codeFir": "RPHI",
+        "geoLong": "E120033840",
+        "spaceId": "designated_point",
+        "txtName": "DEMSA",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "3216652b-e5fb-4207-b128-493f23da098e",
+        "valMagVar": "-3.2",
+        "codeInAirway": "Y",
+        "significantPointId": "8d4825d1-a0c2-4867-bc3a-979dda18eb2d",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4404296875,
+          0.54052734375
+        ]
+      },
+      "properties": {
+        "codeId": "CHRIS",
+        "geoLat": "N19054690",
+        "codeFir": "RPHI",
+        "geoLong": "E120360990",
+        "spaceId": "designated_point",
+        "txtName": "CHRIS",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "4df8a3f3-528c-484c-a54b-054c0547cd68",
+        "valMagVar": "-3.4",
+        "codeInAirway": "Y",
+        "significantPointId": "39f43e19-6185-4c98-8251-b2740876d338",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.72998046875,
+          0.776611328125
+        ]
+      },
+      "properties": {
+        "codeId": "DADNU",
+        "geoLat": "N17501020",
+        "codeFir": "RPHI",
+        "geoLong": "E122134990",
+        "spaceId": "designated_point",
+        "txtName": "DADNU",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "6a9b428c-8326-4dc2-a7ed-b690201c7452",
+        "valMagVar": "-3.3",
+        "codeInAirway": "Y",
+        "significantPointId": "76cb5291-e378-433b-9c41-7246a07352d3",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.39697265625,
+          0.98291015625
+        ]
+      },
+      "properties": {
+        "codeId": "SANRO",
+        "geoLat": "N16434200",
+        "codeFir": "RPHI",
+        "geoLong": "E120212900",
+        "spaceId": "designated_point",
+        "txtName": "SANRO",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "44b29ea7-02f2-4735-9d6a-2f5d15a5b00b",
+        "valMagVar": "-2.9",
+        "codeInAirway": "Y",
+        "significantPointId": "1b21059d-3e26-4111-9c38-38b594aae0cb",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.33203125,
+          0.03857421875
+        ]
+      },
+      "properties": {
+        "codeId": "ANDRE",
+        "geoLat": "N21442800",
+        "codeFir": "RCAA",
+        "geoLong": "E119593200",
+        "spaceId": "designated_point",
+        "txtName": "ANDRE",
+        "codeArea": "RC",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "698a8117-3669-45fa-a722-0b1b0014ad8d",
+        "valMagVar": "-3.9",
+        "codeInAirway": "Y",
+        "significantPointId": "7176587e-6f39-4023-aad7-8e6496b44b2b",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.78662109375,
+          0.18017578125
+        ]
+      },
+      "properties": {
+        "codeId": "MEVIN",
+        "geoLat": "N21000000",
+        "codeFir": "RJJJ",
+        "geoLong": "E122330000",
+        "spaceId": "designated_point",
+        "txtName": "MEVIN",
+        "codeArea": "RJ",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "e3a6e4db-c568-421d-8628-e7cf24e290e7",
+        "valMagVar": "-4",
+        "codeInAirway": "Y",
+        "significantPointId": "cef107dc-0b20-43c3-bf0f-b9ef99c0c729",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.442626953125,
+          0.073486328125
+        ]
+      },
+      "properties": {
+        "codeId": "GLOOM",
+        "geoLat": "N21333500",
+        "codeFir": "RCAA",
+        "geoLong": "E120365500",
+        "spaceId": "designated_point",
+        "txtName": "GLOOM",
+        "codeArea": "RC",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "f557b0dc-ac49-49c1-8f2e-3910aceebd51",
+        "valMagVar": "-4",
+        "codeInAirway": "Y",
+        "significantPointId": "8ff1b733-a691-4967-9f0c-06a0bcc8bafd",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.46826171875,
+          0.18017578125
+        ]
+      },
+      "properties": {
+        "codeId": "POTIB",
+        "geoLat": "N21000000",
+        "codeFir": "RCAA",
+        "geoLong": "E120453000",
+        "spaceId": "designated_point",
+        "txtName": "POTIB",
+        "codeArea": "RC",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "95ea6c8b-aeb3-460f-bfd7-b8f5f55988e5",
+        "valMagVar": "-3.8",
+        "codeInAirway": "Y",
+        "significantPointId": "1ee5785f-fd72-4b88-8476-f437d68a4abc",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.432373046875,
+          0.03076171875
+        ]
+      },
+      "properties": {
+        "codeId": "ZUBAT",
+        "geoLat": "N21465900",
+        "codeFir": "RCAA",
+        "geoLong": "E120332800",
+        "spaceId": "designated_point",
+        "txtName": "ZUBAT",
+        "codeArea": "RC",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "03016250-4291-4a77-88f0-9ce0668925b1",
+        "valMagVar": "-4",
+        "codeInAirway": "Y",
+        "significantPointId": "47dc30f0-a12c-4ea8-bd2c-8c0dee911c38",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.05029296875,
+          0.107666015625
+        ]
+      },
+      "properties": {
+        "codeId": "RECON",
+        "geoLat": "N21225079",
+        "codeFir": "RCAA",
+        "geoLong": "E118242873",
+        "spaceId": "designated_point",
+        "txtName": "RECON",
+        "codeArea": "RC",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "cd875425-16b9-4fda-8126-d10006a7fc55",
+        "valMagVar": "-3.6",
+        "codeInAirway": "Y",
+        "significantPointId": "1687659d-6a27-475e-ba8d-3aaba3afe42f",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.31201171875,
+          0.18017578125
+        ]
+      },
+      "properties": {
+        "codeId": "KABAM",
+        "geoLat": "N21000000",
+        "codeFir": "RCAA",
+        "geoLong": "E119524800",
+        "spaceId": "designated_point",
+        "txtName": "KABAM",
+        "codeArea": "RC",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "d04e90ae-58c7-4d74-bbe9-65bb2550d53f",
+        "valMagVar": "-3.8",
+        "codeInAirway": "Y",
+        "significantPointId": "f728ffde-5232-417c-8919-f41e77188260",
+        "layerName": "designated_point_202507"
+      }
+    }
+  ],
+  "designated_point_N": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4697265625,
+          0.732421875
+        ]
+      },
+      "properties": {
+        "codeId": "PADON",
+        "geoLat": "N18042021",
+        "codeFir": "RPHI",
+        "geoLong": "E120460030",
+        "spaceId": "designated_point_N",
+        "txtName": "PADON",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "b61c59ae-3e2c-4f54-a0d7-4aa7b9fe334a",
+        "valMagVar": "-3.3",
+        "codeInAirway": "N",
+        "significantPointId": "46259bbe-167a-4b99-ab29-6483256db2f0",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6337890625,
+          0.755859375
+        ]
+      },
+      "properties": {
+        "codeId": "PILLI",
+        "geoLat": "N17564900",
+        "codeFir": "RPHI",
+        "geoLong": "E121412200",
+        "spaceId": "designated_point_N",
+        "txtName": "PILLI",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "663f0f4b-c7f4-4392-83e0-636fb73dcbf0",
+        "valMagVar": "-3.4",
+        "codeInAirway": "N",
+        "significantPointId": "bd1a7bc2-7bd2-4e8e-b533-d0c673ab2d72",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.45556640625,
+          0.725830078125
+        ]
+      },
+      "properties": {
+        "codeId": "INGRA",
+        "geoLat": "N18062816",
+        "codeFir": "RPHI",
+        "geoLong": "E120411520",
+        "spaceId": "designated_point_N",
+        "txtName": "INGRA",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "ca8fe698-34d7-41c5-a208-4a467cced3a1",
+        "valMagVar": "-3.3",
+        "codeInAirway": "N",
+        "significantPointId": "e1f214a5-47b5-4b4d-97b0-830af7815dca",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.511962890625,
+          0.75244140625
+        ]
+      },
+      "properties": {
+        "codeId": "SULBO",
+        "geoLat": "N17575566",
+        "codeFir": "RPHI",
+        "geoLong": "E121001492",
+        "spaceId": "designated_point_N",
+        "txtName": "SULBO",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "9f18229f-4e9b-46b2-b589-6201de086f04",
+        "valMagVar": "-3.3",
+        "codeInAirway": "N",
+        "significantPointId": "0b89ee3f-9b2e-4c5e-aaf3-d106e03b3391",
+        "layerName": "designated_point_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.47265625,
+          0.18017578125
+        ]
+      },
+      "properties": {
+        "codeId": "DOREX",
+        "geoLat": "N21000000",
+        "codeFir": "RPHI",
+        "geoLong": "E120470000",
+        "spaceId": "designated_point_N",
+        "txtName": "DOREX",
+        "codeArea": "RP",
+        "codeIcao": "ENRT",
+        "codeType": "DESIGNATED_POINT",
+        "featureId": "ba3efaf7-e594-49ac-8170-06d3d64e4250",
+        "valMagVar": "-4",
+        "codeInAirway": "N",
+        "significantPointId": "44849c9e-d737-46f6-8c75-cdecc1e9ce08",
+        "layerName": "designated_point_202507"
+      }
+    }
+  ],
+  "vor": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.64404296875,
+          0.945068359375
+        ]
+      },
+      "properties": {
+        "codeId": "CUY",
+        "geoLat": "N16555380",
+        "codeFir": "RPHI",
+        "geoLong": "E121445310",
+        "spaceId": "vor",
+        "txtName": "CAUAYAN",
+        "valFreq": "116.5",
+        "codeArea": "RP",
+        "codeType": "VOR",
+        "featureId": "261c6521-8d31-420c-bc03-29a846e65ceb",
+        "valMagVar": "-3",
+        "codeInAirway": "Y",
+        "significantPointId": "2c29a449-3db2-426e-bf15-e291c01a63f5",
+        "layerName": "vor_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.427490234375,
+          0.712646484375
+        ]
+      },
+      "properties": {
+        "codeId": "LAO",
+        "geoLat": "N18104370",
+        "codeFir": "RPHI",
+        "geoLong": "E120314460",
+        "spaceId": "vor",
+        "txtName": "LAOAG",
+        "valElev": "100.0",
+        "valFreq": "112.9",
+        "codeArea": "RP",
+        "codeType": "VOR",
+        "featureId": "dfb5bf59-5ede-4e01-8496-e1f92ab7e8b2",
+        "valMagVar": "-3.2",
+        "codeInAirway": "Y",
+        "significantPointId": "3b05ab9a-cd75-4e65-8c55-203ca5954eff",
+        "layerName": "vor_202507"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4833984375,
+          0.0029296875
+        ]
+      },
+      "properties": {
+        "codeId": "HCN",
+        "geoLat": "N21554000",
+        "codeFir": "RCAA",
+        "geoLong": "E120503690",
+        "spaceId": "vor",
+        "txtName": "HENGCHUN",
+        "valElev": "403.0",
+        "valFreq": "113.7",
+        "codeArea": "RC",
+        "codeType": "VOR",
+        "featureId": "5e5437f6-d251-4ae9-ab57-22c0d1dcb4e0",
+        "valMagVar": "-4.1",
+        "codeInAirway": "Y",
+        "significantPointId": "99b09dea-4a98-4f43-b243-331cd3dbe6f7",
+        "layerName": "vor_202507"
+      }
+    }
+  ]
+}

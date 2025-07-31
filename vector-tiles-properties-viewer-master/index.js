@@ -11,6 +11,7 @@ fetch(TILE_URL).then(async response => {
     Object.keys(tile.layers).map(layerID => {
 
         const layer = tile.layers[layerID];
+        console.log(layer)
         if (layer.name === 'restricted_line_202507') {
             console.log(layer.feature(1).properties)
         }
