@@ -62,39 +62,6 @@ function addMVT(map) {
             map.addImage('pattern-orange', linePattner_orange.data);
             map.addImage('pattern-blue', linePattner_blue.data);
             // map.addImage('text-bg', textBG.data);
-
-            // 航线名称
-            // map.addLayer({
-            //   id: "line-label",
-            //   type: "symbol",
-            //   source: "baseMvt", // 对应的 vector source
-            //   "source-layer": "segment_202507", // 线图层名
-            //   layout: {
-            //     "symbol-placement": "line", // 关键属性，表示文字沿线分布
-            //     "text-field": [
-            //       "format",
-            //       ["get", "valLen"],
-            //       { "font-scale": 0.8 ,'text-color':'#536577','text-border-width':'3'},
-            //       ["get", "uomDist"],
-            //       { "font-scale": 0.8 ,'text-color':'#536577'},
-            //       "\n",
-            //       ["get", "txtDesig"],
-            //       { "font-scale": 1 },
-            //       "\n",
-            //       ["get", "txtDesigHigh"],
-            //       { "font-scale": 0.8 ,'text-color':'#536577'},
-            //     ], // 或固定文本，比如 "路线A"
-            //     "text-font": ["Open Sans Bold"],
-            //     "text-size": 14,
-            //     "text-rotation-alignment": "map", // 文字跟随线条旋转
-            //     "text-pitch-alignment": "viewport", // 适配3D时有用
-            //   },
-            //   paint: {
-            //     "text-color": "#000",
-            //     "text-halo-color": "#fff",
-            //     "text-halo-width": 1,
-            //   },
-            // });
             // 空域名称
             map.addLayer({
                 id: "airspace-label-layer",
@@ -111,6 +78,17 @@ function addMVT(map) {
                 },
                 paint: {
                     "text-color": "#000",
+                    "text-halo-color": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        0,
+                        "#eecf68",
+                        22,
+                        "#eecf68"
+                    ],
+                    "text-halo-width": 30,
+                    "text-halo-blur": 10
                 },
             });
             // 航线名称
@@ -250,37 +228,21 @@ function addMVT(map) {
                 },
                 "oceanLayer"
             );
-            // 邮政区划 postal 邮局
-            map.addLayer(
-                {
-                    id: "postalLayer",
-                    type: "fill",
-                    source: "maplibreCountries",
-                    "source-layer": "postal",
-                    minzoom: 6,
-                    maxzoom: 11,
-                    paint: {
-                        "fill-color": "#0000ff",
-                        "fill-opacity": 1,
-                    },
-                },
-                "oceanLayer"
-            );
 
             // 添加机场轮廓
-            map.addLayer({
-                id: "airport-lines",
-                type: "line",
-                source: "AMMMvt",
-                "source-layer": "airport_area_region_line_202507",
-                minzoom: 9,
-                maxzoom: 24,
-                paint: {
-                    "line-color": "#000000",
-                    "line-opacity": 1,
-                    "line-width": 1,
-                },
-            });
+            // map.addLayer({
+            //     id: "airport-lines",
+            //     type: "line",
+            //     source: "AMMMvt",
+            //     "source-layer": "airport_area_region_line_202507",
+            //     minzoom: 9,
+            //     maxzoom: 24,
+            //     paint: {
+            //         "line-color": "#000000",
+            //         "line-opacity": 1,
+            //         "line-width": 1,
+            //     },
+            // });
         });
 }
 

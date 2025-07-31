@@ -67,7 +67,7 @@
             "source": "natureMvt",
             "source-layer": "ocean",
             "paint": {
-                "fill-color": "#d1f1fe",
+                "fill-color": "#759ca3",
                 "fill-opacity": 1
             }
         },
@@ -99,11 +99,29 @@
             "id": "airspaceLayer",
             "type": "line",
             "source": "baseMvt",
+            "minzoom": 1,
             "source-layer": "airspace_line_202507",
             "paint": {
-                "line-color": "#434340",
+                "line-color": "#eecf68",
                 "line-opacity": 0.8,
-                "line-width": 1
+                "line-width": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    1,
+                    1,
+                    2,
+                    2
+                ]
+            },
+            "layout": {
+                "line-cap": "butt",
+                "line-join": "miter",
+                "line-miter-limit": 2
             }
         },
         {
