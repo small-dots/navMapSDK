@@ -1,10 +1,16 @@
 {
-  "text-bg": {
-    "width": 66,
+  "custom-icon": {
+    "width": 85,
     "height": 34,
     "x": 0,
     "y": 0,
-    "pixelRatio": 1,
-    "visible": true
+    "pixelRatio": 1
+  },
+  "text-bg-t": {
+    "width": 85,
+    "height": 96,
+    "x": 0,
+    "y": 0,
+    "pixelRatio": 1
   }
 }
